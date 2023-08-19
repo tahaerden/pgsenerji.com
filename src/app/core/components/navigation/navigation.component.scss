@@ -7,6 +7,9 @@
   left: 0;
   z-index: 1;
   width: 100vw;
+  height: 100px;
+  // background-color: white;
+  padding: 0 2em;
 }
 .nav {
   display: flex;
@@ -21,4 +24,7 @@
     text-decoration: none;
     color: initial;
   }
+}
+img {
+  height: 100%;
 }
