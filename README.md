@@ -10,6 +10,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Generating a lazy-loading feature module
+
+Run `ng generate module pages/customers --route customers --module app.module`. This creates a customers directory having the new lazy-loadable feature module CustomersModule defined in the customers.module.ts file and the routing module CustomersRoutingModule defined in the customers-routing.module.ts file. The command automatically declares the CustomersComponent and imports CustomersRoutingModule inside the new feature module.
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
