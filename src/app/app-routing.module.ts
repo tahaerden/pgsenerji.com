@@ -12,15 +12,7 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      {
-        path: '',
-        redirectTo: 'anasayfa',
-        pathMatch: 'full'
-      },
-      {
-        path: 'anasayfa',
-        loadChildren: () => import('./pages/anasayfa/anasayfa.module').then((m) => m.AnasayfaModule)
-      }
+      { path: '', loadChildren: () => import('./pages/home/home.module').then((m) => m.HomeModule) }
     ]
   },
   { path: '**', redirectTo: '404' }

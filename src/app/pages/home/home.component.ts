@@ -4,11 +4,11 @@ import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.c
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
 
 @Component({
-  selector: 'app-anasayfa',
-  templateUrl: './anasayfa.component.html',
-  styleUrls: ['./anasayfa.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AnasayfaComponent {
+export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
 
