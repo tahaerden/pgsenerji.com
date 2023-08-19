@@ -2,14 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: 1;
   width: 100vw;
   height: 100px;
   // background-color: white;
   padding: 0 2em;
+  & > a {
+    height: 100%;
+    img {
+      height: 100%;
+    }
+  }
 }
 .nav {
   display: flex;
@@ -24,7 +30,4 @@
     text-decoration: none;
     color: initial;
   }
-}
-img {
-  height: 100%;
 }
