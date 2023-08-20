@@ -1,0 +1,28 @@
+@import '/src/scss/variables.scss';
+.row {
+  height: 400px;
+  position: relative;
+  margin-bottom: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    opacity: 0.5;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 5vw;
+      margin: 0;
+      z-index: 1;
+    }
+  }
+}

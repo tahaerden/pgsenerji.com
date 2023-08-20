@@ -3,15 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ReferencesRoutingModule } from './references-routing.module';
 import { ReferencesComponent } from './references.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    ReferencesComponent
-  ],
-  imports: [
-    CommonModule,
-    ReferencesRoutingModule
-  ]
+  declarations: [ReferencesComponent],
+  imports: [CommonModule, ReferencesRoutingModule, SharedModule]
 })
-export class ReferencesModule { }
+export class ReferencesModule {}

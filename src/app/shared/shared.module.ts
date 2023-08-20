@@ -1,13 +1,14 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { TranslateModule } from '@ngx-translate/core';
-const modules = [TranslateModule.forChild()];
+import { BannerComponent } from './components/banner/banner.component';
+import { CommonModule } from '@angular/common';
+const modules = [CommonModule, TranslateModule.forChild()];
 
 @NgModule({
-  declarations: [],
+  declarations: [BannerComponent, BannerComponent],
   imports: [modules],
-  exports: [modules],
+  exports: [modules, BannerComponent],
   providers: []
-  // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule {}
