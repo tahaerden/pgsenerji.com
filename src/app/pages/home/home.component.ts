@@ -13,7 +13,7 @@ export class HomeComponent {
   animationType = AnimationType.Fade;
   slides: Slide[] = [
     {
-      headline: 'For Your Current Mood',
+      headline: 'Güven, Yenilik, Profesyonellik',
       src: 'https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'
     },
     {
