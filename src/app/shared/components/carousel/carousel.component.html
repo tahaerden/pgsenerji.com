@@ -7,6 +7,9 @@
       class="slide"
       [@slideAnimation]="animationType"
     />
+    <h1 *ngIf="i === currentSlide" class="headline" [@slideAnimation]="'slideUp'">
+      {{ slide.headline }}
+    </h1>
   </ng-container>
 
   <!-- controls -->

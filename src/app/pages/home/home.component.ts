@@ -11,7 +11,6 @@ import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
 export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
-
   slides: Slide[] = [
     {
       headline: 'For Your Current Mood',

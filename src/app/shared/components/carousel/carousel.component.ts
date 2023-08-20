@@ -11,7 +11,8 @@ import {
   flipIn,
   flipOut,
   jackIn,
-  jackOut
+  jackOut,
+  slideUp
 } from './carousel.animations';
 
 @Component({
@@ -34,7 +35,11 @@ import {
 
       /* JackInTheBox */
       transition('void => jackInTheBox', [useAnimation(jackIn, { params: { time: '700ms' } })]),
-      transition('jackInTheBox => void', [useAnimation(jackOut, { params: { time: '700ms' } })])
+      transition('jackInTheBox => void', [useAnimation(jackOut, { params: { time: '700ms' } })]),
+
+      /* Slide Up */
+      transition('void => slideUp', [useAnimation(slideUp, { params: { time: '700ms' } })])
+      // transition('slideUp => void', [useAnimation(jackOut, { params: { time: '700ms' } })])
     ])
   ]
 })
