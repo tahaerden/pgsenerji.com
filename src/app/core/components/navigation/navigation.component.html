@@ -3,20 +3,32 @@
     <img src="assets/img/pgs-enerji-logo-white.jpg" alt="" />
   </a>
   <ul class="nav">
-    <li><a routerLink="/solution-partners">Solution Partners</a></li>
-    <li><a routerLink="/about-us">About Us</a></li>
-    <li><a routerLink="/references">References</a></li>
-    <li><a routerLink="/services">Services</a></li>
-    <li><a routerLink="/projects">Projects</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
-    <!-- <li>
-      <button [cdkMenuTriggerFor]="menu">Profile</button>
+    <li>
+      <a routerLink="/solution-partners">{{ 'SOLUTION_PARTNERS' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/about-us">{{ 'ABOUT_US' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/references">{{ 'REFERENCES' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/services">{{ 'SERVICES' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/projects">{{ 'PROJECTS' | translate }}</a>
+    </li>
+    <li>
+      <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>
+    </li>
+    <li>
+      <button [cdkMenuTriggerFor]="menu">{{ selectedLang | uppercase }}</button>
       <ng-template #menu>
         <div cdkMenu>
-          <button cdkMenuItem routerLink="/profile">Profile</button>
-          <button cdkMenuItem routerLink="/logout">Logout</button>
+          <button cdkMenuItem (click)="switchLanguage('en')">English</button>
+          <button cdkMenuItem (click)="switchLanguage('tr')">Türkçe</button>
         </div>
       </ng-template>
-    </li> -->
+    </li>
   </ul>
 </div>
