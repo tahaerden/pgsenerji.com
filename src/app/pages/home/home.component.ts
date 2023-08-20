@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { AnimationType } from 'src/app/shared/components/carousel/carousel.animations';
+import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
 

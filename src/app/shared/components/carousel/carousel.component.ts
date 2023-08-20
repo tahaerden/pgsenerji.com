@@ -13,7 +13,7 @@ import {
   jackIn,
   jackOut,
   slideUp
-} from './carousel.animations';
+} from '../animations/animations';
 
 @Component({
   selector: 'carousel',
@@ -26,8 +26,8 @@ import {
       transition('scale => void', [useAnimation(scaleOut, { params: { time: '500ms' } })]),
 
       /* fade */
-      transition('void => fade', [useAnimation(fadeIn, { params: { time: '500ms' } })]),
-      transition('fade => void', [useAnimation(fadeOut, { params: { time: '500ms' } })]),
+      transition('void => fade', [useAnimation(fadeIn, { params: { time: '2500ms' } })]),
+      transition('fade => void', [useAnimation(fadeOut, { params: { time: '1000ms' } })]),
 
       /* flip */
       transition('void => flip', [useAnimation(flipIn, { params: { time: '500ms' } })]),
@@ -38,7 +38,7 @@ import {
       transition('jackInTheBox => void', [useAnimation(jackOut, { params: { time: '700ms' } })]),
 
       /* Slide Up */
-      transition('void => slideUp', [useAnimation(slideUp, { params: { time: '700ms' } })])
+      transition('void => slideUp', [useAnimation(slideUp, { params: { time: '2500ms' } })])
       // transition('slideUp => void', [useAnimation(jackOut, { params: { time: '700ms' } })])
     ])
   ]
