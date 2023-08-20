@@ -1,1 +1,9 @@
 <app-banner title="REFERENCES"></app-banner>
+
+<div class="row">
+  <div class="col">
+    <div class="brand" *ngFor="let item of references">
+      <img [src]="'assets/img/references/' + item" [alt]="item" />
+    </div>
+  </div>
+</div>
