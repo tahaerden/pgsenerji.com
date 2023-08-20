@@ -1,8 +1,11 @@
 {
+  "HOME": "Home",
   "SOLUTION_PARTNERS": "Solution Partners",
   "ABOUT_US": "About Us",
   "REFERENCES": "References",
   "SERVICES": "Services",
   "PROJECTS": "Projects",
-  "CONTACT": "Contact"
+  "CONTACT": "Contact",
+  "PAGE_NOT_FOUND": "The page you are looking for was not found.",
+  "BACK_TO_HOME": "Back to home"
 }
