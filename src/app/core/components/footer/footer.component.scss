@@ -1,0 +1,16 @@
+@import '/src/scss/variables.scss';
+footer {
+  background-color: #373737;
+  padding: 2em;
+  h3 {
+    text-align: center;
+    color: white;
+  }
+  .nav {
+    button {
+      display: block;
+      margin: auto;
+      color: white;
+    }
+  }
+}

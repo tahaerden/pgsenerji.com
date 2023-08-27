@@ -48,9 +48,6 @@
       <button [cdkMenuTriggerFor]="menu1">---</button>
       <ng-template #menu1>
         <div cdkMenu>
-          <button cdkMenuItem routerLink="/solution-partners">
-            {{ 'SOLUTION_PARTNERS' | translate }}
-          </button>
           <button cdkMenuItem [cdkMenuTriggerFor]="institutional">
             {{ 'INSTITUTIONAL' | translate }}
           </button>
@@ -66,6 +63,9 @@
               </button>
             </div>
           </ng-template>
+          <button cdkMenuItem routerLink="/solution-partners">
+            {{ 'SOLUTION_PARTNERS' | translate }}
+          </button>
           <button cdkMenuItem routerLink="/references">{{ 'REFERENCES' | translate }}</button>
           <button cdkMenuItem routerLink="/services">{{ 'SERVICES' | translate }}</button>
           <button cdkMenuItem routerLink="/projects">{{ 'PROJECTS' | translate }}</button>

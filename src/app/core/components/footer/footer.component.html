@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="assets/img/pgs-energy-logo-transparent.png" alt="" />
+    </div>
+    <div class="col">
+      <h3>{{ 'SITEMAP' | translate }}</h3>
+      <div class="nav">
+        <button cdkMenuItem [cdkMenuTriggerFor]="institutional">
+          {{ 'INSTITUTIONAL' | translate }}
+        </button>
+        <ng-template #institutional>
+          <div cdkMenu>
+            <button cdkMenuItem routerLink="/about-us">{{ 'ABOUT_US' | translate }}</button>
+            <button cdkMenuItem routerLink="/mission-vision">
+              {{ 'MISSION_AND_VISION' | translate }}
+            </button>
+            <button cdkMenuItem routerLink="/team">{{ 'TEAM' | translate }}</button>
+            <button cdkMenuItem routerLink="/responsibilities">
+              {{ 'RESPONSIBILITIES' | translate }}
+            </button>
+          </div>
+        </ng-template>
+        <button routerLink="/solution-partners">
+          {{ 'SOLUTION_PARTNERS' | translate }}
+        </button>
+        <button routerLink="/references">{{ 'REFERENCES' | translate }}</button>
+        <button routerLink="/services">{{ 'SERVICES' | translate }}</button>
+        <button routerLink="/projects">{{ 'PROJECTS' | translate }}</button>
+        <button routerLink="/contact">{{ 'CONTACT' | translate }}</button>
+      </div>
+    </div>
+    <div class="col">
+      <h3>{{ 'CONTACT' | translate }}</h3>
+      <img src="assets/img/contact/business-card-back.png" alt="PGS Enerji Business Card Back" />
+    </div>
+  </div>
+</footer>
