@@ -1,27 +1,8 @@
 <app-banner title="TEAM"></app-banner>
 <div class="row">
   <div class="col">
-    <img src="assets/img/about-us/team.jpeg" alt="Çalışanlarımız" />
-    <h2>Çalışanlarımız</h2>
-    <p>Çalışanlarımız, bizim en değerli varlığımız.</p>
-    <p>
-      Firmamızın başarısının arkasındaki en büyük güç, bağlı ve yetenekli çalışanlarımızdır. Biz
-      çalışanlarımızın işimize katkısını yürekten takdir eder ve onların başarısı için gerekli
-      ortamı sağlamak amacıyla kararlıyız.
-    </p>
-    <p>Çalışanlarımıza Değer Veriyoruz:</p>
-    <p>
-      Çeşitlilik ve Katılım: Farklılık ve farklı bakış açılarını teşvik ederek, zengin bir iş gücü
-      oluştururuz.
-    </p>
-    <p>
-      İşbirliği ve Ekip Çalışması: İşbirliği, takım çalışması ve bilgi paylaşımıyla en iyi sonuçları
-      elde ederiz.
-    </p>
-    <p>Çalışanlarımızla bir aile oluşturarak, birlikte büyüme ve başarıyı paylaşma amacındayız.</p>
-    <p>
-      Onların tutkusu, enerjisi ve yenilikçi yaklaşımları, firmamızı daha da ileri taşıyacak en
-      önemli faktörlerdir.
-    </p>
+    <img src="assets/img/about-us/team.jpeg" alt="{{ 'TEAM' | translate }}" />
+    <h2>{{ 'TEAM' | translate }}</h2>
+    <article [innerHtml]="'TEAM_TEXT' | translate"></article>
   </div>
 </div>

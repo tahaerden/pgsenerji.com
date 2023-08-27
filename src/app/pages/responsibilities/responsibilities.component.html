@@ -1,31 +1,8 @@
 <app-banner title="RESPONSIBILITIES"></app-banner>
 <div class="row">
   <div class="col">
-    <img src="assets/img/pgs-enerji-logo-primary.jpg" alt="Sorumluluklarımız" />
-    <h2>Sorumluluklarımız</h2>
-    <p>
-      Kalite Standartları: Müşterilerimize en yüksek kalitede hizmet sunmak için sürekli olarak
-      kalite standartlarımızı yükseltmek ve sürdürmek.
-    </p>
-    <p>
-      Çevre Duyarlılığı: Çevreyi korumak ve sürdürülebilirlik ilkesini benimsemek için atık yönetimi
-      ve enerji tasarrufu gibi çevresel konulara özen göstermek.
-    </p>
-    <p>
-      İnovasyon ve Teknoloji: Yenilikçi çözümler geliştirmek, güncel teknolojileri takip etmek ve
-      sektördeki en son gelişmeleri müşterilerimize sunmak.
-    </p>
-    <p>
-      İş Sağlığı ve Güvenliği: Çalışanlarımızın güvenliğini sağlamak, iş sağlığı ve güvenliği
-      standartlarına uymak ve iş kazalarını minimize etmek.
-    </p>
-    <p>
-      Etik Değerler: İş yapış tarzımızda dürüstlük, şeffaflık ve etik değerleri benimsemek ve
-      bunları her seviyede teşvik etmek.
-    </p>
-    <p>
-      Bu sorumluluklarımızı yerine getirerek, hem müşterilerimize değer katmayı hem de toplumsal ve
-      çevresel etkilerimizi olumlu yönde artırmayı amaçlıyoruz.
-    </p>
+    <img src="assets/img/pgs-enerji-logo-primary.jpg" alt="{{ 'RESPONSIBILITIES' | translate }}" />
+    <h2>{{ 'RESPONSIBILITIES' | translate }}</h2>
+    <article [innerHtml]="'RESPONSIBILITIES_TEXT' | translate"></article>
   </div>
 </div>
