@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './core/components/layout/layout.component';
 
 const routes: Routes = [
   {
@@ -20,6 +19,22 @@ const routes: Routes = [
     path: 'about-us',
     data: { animation: 'about-us' },
     loadChildren: () => import('./pages/about-us/about-us.module').then((m) => m.AboutUsModule)
+  },
+  {
+    path: 'mission-vision',
+    loadChildren: () =>
+      import('./pages/mission-vision/mission-vision.module').then((m) => m.MissionVisionModule)
+  },
+  {
+    path: 'team',
+    loadChildren: () => import('./pages/team/team.module').then((m) => m.TeamModule)
+  },
+  {
+    path: 'responsibilities',
+    loadChildren: () =>
+      import('./pages/responsibilities/responsibilities.module').then(
+        (m) => m.ResponsibilitiesModule
+      )
   },
   {
     path: 'references',

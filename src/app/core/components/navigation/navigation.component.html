@@ -6,6 +6,22 @@
     <li>
       <a routerLink="/about-us">{{ 'ABOUT_US' | translate }}</a>
     </li>
+
+    <li>
+      <button [cdkMenuTriggerFor]="menu">{{ 'INSTITUTIONAL' | translate }}</button>
+      <ng-template #menu>
+        <div cdkMenu>
+          <button cdkMenuItem routerLink="/about-us">{{ 'ABOUT_US' | translate }}</button>
+          <button cdkMenuItem routerLink="/mission-vision">
+            {{ 'MISSION_AND_VISION' | translate }}
+          </button>
+          <button cdkMenuItem routerLink="/team">{{ 'TEAM' | translate }}</button>
+          <button cdkMenuItem routerLink="/responsibilities">
+            {{ 'RESPONSIBILITIES' | translate }}
+          </button>
+        </div>
+      </ng-template>
+    </li>
     <li>
       <a routerLink="/solution-partners">{{ 'SOLUTION_PARTNERS' | translate }}</a>
     </li>
