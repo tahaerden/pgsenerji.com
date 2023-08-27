@@ -1,11 +1,15 @@
 {
-  "HOME": "Home",
-  "SOLUTION_PARTNERS": "Solution Partners",
-  "ABOUT_US": "About Us",
-  "REFERENCES": "References",
-  "SERVICES": "Services",
-  "PROJECTS": "Projects",
-  "CONTACT": "Contact",
-  "PAGE_NOT_FOUND": "The page you are looking for was not found.",
-  "BACK_TO_HOME": "Back to home"
+  "HOME": "Anasayfa",
+  "SOLUTION_PARTNERS": "Çözüm Ortakları",
+  "ABOUT_US": "Hakkımızda",
+  "REFERENCES": "Referanslar",
+  "SERVICES": "Hizmetler",
+  "PROJECTS": "Projeler",
+  "CONTACT": "İletişim",
+  "PAGE_NOT_FOUND": "Aradığınız sayfa bulunamadı.",
+  "BACK_TO_HOME": "Anasayfaya dön",
+  "INSTITUTIONAL": "Kurumsal",
+  "MISSION_AND_VISION": "Misyon ve Vizyon",
+  "TEAM": "Çalışanlarımız",
+  "RESPONSIBILITIES": "Sorumluluklar"
 }

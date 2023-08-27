@@ -4,12 +4,8 @@
   </a>
   <ul class="nav hidden-smaller-lg">
     <li>
-      <a routerLink="/about-us">{{ 'ABOUT_US' | translate }}</a>
-    </li>
-
-    <li>
-      <button [cdkMenuTriggerFor]="menu">{{ 'INSTITUTIONAL' | translate }}</button>
-      <ng-template #menu>
+      <button [cdkMenuTriggerFor]="institutional">{{ 'INSTITUTIONAL' | translate }}</button>
+      <ng-template #institutional>
         <div cdkMenu>
           <button cdkMenuItem routerLink="/about-us">{{ 'ABOUT_US' | translate }}</button>
           <button cdkMenuItem routerLink="/mission-vision">
@@ -55,7 +51,21 @@
           <button cdkMenuItem routerLink="/solution-partners">
             {{ 'SOLUTION_PARTNERS' | translate }}
           </button>
-          <button cdkMenuItem routerLink="/about-us">{{ 'ABOUT_US' | translate }}</button>
+          <button cdkMenuItem [cdkMenuTriggerFor]="institutional">
+            {{ 'INSTITUTIONAL' | translate }}
+          </button>
+          <ng-template #institutional>
+            <div cdkMenu>
+              <button cdkMenuItem routerLink="/about-us">{{ 'ABOUT_US' | translate }}</button>
+              <button cdkMenuItem routerLink="/mission-vision">
+                {{ 'MISSION_AND_VISION' | translate }}
+              </button>
+              <button cdkMenuItem routerLink="/team">{{ 'TEAM' | translate }}</button>
+              <button cdkMenuItem routerLink="/responsibilities">
+                {{ 'RESPONSIBILITIES' | translate }}
+              </button>
+            </div>
+          </ng-template>
           <button cdkMenuItem routerLink="/references">{{ 'REFERENCES' | translate }}</button>
           <button cdkMenuItem routerLink="/services">{{ 'SERVICES' | translate }}</button>
           <button cdkMenuItem routerLink="/projects">{{ 'PROJECTS' | translate }}</button>
