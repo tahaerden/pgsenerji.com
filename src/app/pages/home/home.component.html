@@ -1,9 +1,28 @@
-<div class="carousel-container">
+<div class="main-slides">
   <carousel [slides]="slides" [animationType]="animationType"></carousel>
 </div>
-<!-- <div class="row">
+<div class="row">
   <div class="col">
-    <h1>hi</h1>
+    <h1>Öne Çıkan Projeler</h1>
   </div>
-</div> -->
-<div>asd</div>
+</div>
+<div class="featured-projects">
+  <carousel [slides]="projects" [animationType]="animationType"></carousel>
+</div>
+<div class="row">
+  <div class="col">
+    <h1>Uzman Kadro</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maxime itaque veritatis?
+      Temporibus, voluptatem officiis consequuntur quasi eos cupiditate optio ipsa? Impedit nemo
+      dolorum commodi porro sunt nam, sequi ducimus?
+    </p>
+  </div>
+  <div class="col">
+    <img src="assets/img/about-us/team.jpeg" alt="{{ 'TEAM' | translate }}" />
+  </div>
+</div>

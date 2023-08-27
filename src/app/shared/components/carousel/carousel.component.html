@@ -10,6 +10,7 @@
     <h1 *ngIf="i === currentSlide" class="headline" [@slideAnimation]="'slideUp'">
       {{ slide.headline }}
     </h1>
+    <h3 *ngIf="i === currentSlide" class="subtitle">{{ slide.subtitle }}</h3>
   </ng-container>
 
   <!-- controls -->

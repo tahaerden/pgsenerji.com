@@ -10,7 +10,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   // border-radius: 0.5em;
 }
 
@@ -32,6 +32,7 @@
 
 .headline {
   position: absolute;
+  margin: 0;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -39,6 +40,18 @@
   align-items: center;
   justify-content: center;
   font-size: 6vw;
+  color: white;
+}
+
+.subtitle {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: #00000050;
   color: white;
 }
 
