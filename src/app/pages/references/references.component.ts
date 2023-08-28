@@ -18,6 +18,10 @@ export class ReferencesComponent {
     'msb.jpeg',
     'saglik-bakanligi.jpeg',
     'tobb.jpeg',
-    'toki.jpeg'
+    'toki.jpeg',
+    'abc-schools.jpeg',
+    'havelsan.jpeg',
+    'jandarma.jpeg',
+    'tkk.jpeg'
   ];
 }
