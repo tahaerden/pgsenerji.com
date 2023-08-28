@@ -2,9 +2,9 @@
 <div class="row">
   <div class="col">
     <div class="brand" *ngFor="let item of services">
-      <a routerLink="services/{{ item.route }}">
+      <a routerLink="/services/{{ item.route }}">
         <img [src]="'assets/img/services/' + item.route + '.jpg'" [alt]="item" />
-        <h4>{{ item.translationKey }}</h4>
+        <h4>{{ item.translationKey | translate }}</h4>
       </a>
     </div>
   </div>
