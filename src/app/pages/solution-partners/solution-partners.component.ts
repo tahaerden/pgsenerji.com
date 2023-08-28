@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./solution-partners.component.scss']
 })
 export class SolutionPartnersComponent {
-
+  partnersImgName = [
+    '2m-kablo.png',
+    'abb.png',
+    'ankalight.jpeg',
+    'astor.jpeg',
+    'atempo.png',
+    'dlex.png',
+    'eae.jpeg',
+    'ecf.jpeg',
+    'emp.png',
+    'erse.jpeg',
+    'gersan.png',
+    'hcs.jpeg',
+    'hik-vision.png',
+    'oznur-kablo.png',
+    'pinarsan.png',
+    'prosis.png',
+    'prosis2.jpeg',
+    'prysmian.png',
+    'sts.jpeg',
+    'vekta.png'
+  ];
 }

@@ -1,1 +1,9 @@
 <app-banner title="SOLUTION_PARTNERS"></app-banner>
+
+<div class="row">
+  <div class="col">
+    <div class="brand" *ngFor="let item of partnersImgName">
+      <img [src]="'assets/img/solution-partners/' + item" [alt]="item" />
+    </div>
+  </div>
+</div>
