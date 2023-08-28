@@ -22,15 +22,18 @@ const routes: Routes = [
   },
   {
     path: 'mission-vision',
+    data: { animation: 'mission-vision' },
     loadChildren: () =>
       import('./pages/mission-vision/mission-vision.module').then((m) => m.MissionVisionModule)
   },
   {
     path: 'team',
+    data: { animation: 'team' },
     loadChildren: () => import('./pages/team/team.module').then((m) => m.TeamModule)
   },
   {
     path: 'responsibilities',
+    data: { animation: 'responsibilities' },
     loadChildren: () =>
       import('./pages/responsibilities/responsibilities.module').then(
         (m) => m.ResponsibilitiesModule
