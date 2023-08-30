@@ -14,7 +14,7 @@ export class HomeComponent {
   slides: Slide[] = [
     {
       headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'
+      src: 'https://www.youtube.com/embed/bFDNrQp7vi4'
     },
     {
       headline: 'Güven, Yenilik, Profesyonellik',

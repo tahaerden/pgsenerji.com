@@ -2,15 +2,26 @@
 <div class="carousel">
   <ng-container *ngFor="let slide of slides; let i = index">
     <img
-      *ngIf="i === currentSlide"
+      *ngIf="i === currentSlide && !slide.src.startsWith('https://www.youtube.com')"
       [src]="slide.src"
       class="slide"
       [@slideAnimation]="animationType"
     />
-    <h1 *ngIf="i === currentSlide" class="headline" [@slideAnimation]="'slideUp'">
+    <iframe
+      *ngIf="i === currentSlide && slide.src.startsWith('https://www.youtube.com')"
+      [src]="
+        slide.src +
+        '?autoplay=1&mute=1&loop=1&playlist=bFDNrQp7vi4&controls=0&rel=0&modestbranding=0 | safe'
+      "
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <h1 *ngIf="i === currentSlide && slide.headline" class="headline" [@slideAnimation]="'slideUp'">
       {{ slide.headline }}
     </h1>
-    <h3 *ngIf="i === currentSlide" class="subtitle">{{ slide.subtitle }}</h3>
+    <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">{{ slide.subtitle }}</h3>
   </ng-container>
 
   <!-- controls -->

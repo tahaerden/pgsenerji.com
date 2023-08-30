@@ -26,8 +26,27 @@
   // border-radius: 0.5em;
 }
 
-.slide:hover {
-  transform: scale(1.025);
+// .slide:hover {
+//   transform: scale(1.025);
+// }
+
+iframe {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    width: 177.78vh;
+  }
 }
 
 .headline {
