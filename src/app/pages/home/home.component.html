@@ -1,5 +1,5 @@
 <div class="full-height-minus-header">
-  <carousel [slides]="slides" [animationType]="animationType" [timer]="0"></carousel>
+  <carousel [slides]="slides" [animationType]="animationType" [timer]="10000"></carousel>
 </div>
 <div class="row">
   <div class="col">
@@ -23,7 +23,7 @@
     </p>
   </div>
   <div class="col">
-    <img src="assets/img/about-us/team.jpeg" alt="{{ 'TEAM' | translate }}" />
+    <carousel [slides]="team" [animationType]="animationType" [timer]="5000"></carousel>
   </div>
 </div>
 
