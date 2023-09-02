@@ -46,7 +46,11 @@ export class HomeComponent {
   ];
   team: Slide[] = [
     {
-      // subtitle: 'Proje 1',
+      subtitle: 'Proje 1 şantiyesinden',
+      src: 'assets/img/about-us/team.jpeg'
+    },
+    {
+      subtitle: 'Proje 2 şantiyesinden',
       src: 'assets/img/about-us/team.jpeg'
     }
   ];
