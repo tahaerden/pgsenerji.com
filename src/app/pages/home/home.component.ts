@@ -13,20 +13,20 @@ export class HomeComponent {
   animationType = AnimationType.Fade;
   slides: Slide[] = [
     {
-      headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://www.youtube.com/embed/bFDNrQp7vi4'
+      headline: '(P)roje ve (G)üç (S)istemleri',
+      src: 'https://www.youtube.com/embed/bFDNrQp7vi4?'
     },
     {
       headline: 'Güven, Yenilik, Profesyonellik',
       src: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
     },
     {
-      headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80'
+      headline: 'Projeler slogan',
+      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=6jhIRmXTT9N9bTde&amp;clip=UgkxVvV2RMxVcvwYgNql10T7osDr1Drakj45&amp;clipt=EPTkARi58wI'
     },
     {
-      headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
+      headline: 'Çalışanlar slogan',
+      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=W0t08nyzzrF_jJ-v&amp;clip=UgkxaaXVwmRcTxtvuVBWq_gtH3QKX4Ki_-5y&amp;clipt=ELKOARi22wE'
     }
   ];
   projects: Slide[] = [

@@ -10,10 +10,7 @@
     <iframe
       *ngIf="i === currentSlide && slide.src.startsWith('https://www.youtube.com')"
       [src]="
-        safe.transform(
-          slide.src +
-            '?autoplay=1&mute=1&loop=1&playlist=bFDNrQp7vi4&controls=0&rel=0&modestbranding=0'
-        )
+        safe.transform(slide.src + '&autoplay=1&mute=1&loop=1&controls=0&rel=0&modestbranding=0')
       "
       title="YouTube video player"
       frameborder="0"
