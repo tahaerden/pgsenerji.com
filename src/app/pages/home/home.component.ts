@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
@@ -13,7 +13,7 @@ export class HomeComponent {
   animationType = AnimationType.Fade;
   slides: Slide[] = [
     {
-      headline: '(P)roje ve (G)üç (S)istemleri',
+      headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
       src: 'https://www.youtube.com/embed/bFDNrQp7vi4?'
     },
     {

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Slide } from './carousel.interface';
 import { trigger, transition, useAnimation } from '@angular/animations';
 
@@ -20,6 +20,7 @@ import { SafePipe } from 'src/app/core/pipes/safe.pipe';
   selector: 'carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
+  encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('slideAnimation', [
       /* scale */

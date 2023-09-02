@@ -17,9 +17,12 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
-    <h1 *ngIf="i === currentSlide && slide.headline" class="headline" [@slideAnimation]="'slideUp'">
-      {{ slide.headline }}
-    </h1>
+    <h1
+      *ngIf="i === currentSlide && slide.headline"
+      class="headline"
+      [@slideAnimation]="'slideUp'"
+      [innerHtml]="slide.headline"
+    ></h1>
     <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">{{ slide.subtitle }}</h3>
   </ng-container>
 
