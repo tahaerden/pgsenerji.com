@@ -3,7 +3,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <h1>Öne Çıkan Projeler</h1>
+    <h1>{{ 'FEATURED_PROJECTS' | translate }}</h1>
   </div>
 </div>
 <div class="full-height">
@@ -11,7 +11,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <h1>Uzman Kadro</h1>
+    <h1>{{ 'EXPERT_TEAM' | translate }}</h1>
   </div>
 </div>
 <div class="row">
@@ -24,6 +24,14 @@
   </div>
   <div class="col">
     <carousel [slides]="team" [animationType]="animationType" [timer]="5000"></carousel>
+  </div>
+</div>
+<div class="row max-w-xl m-auto">
+  <div class="col">
+    <h1>{{ 'REFERENCES' | translate }}</h1>
+    <div #horizontalScroll class="horizontal-scroll">
+      <img *ngFor="let item of references" [src]="'assets/img/references/' + item" [alt]="item" />
+    </div>
   </div>
 </div>
 

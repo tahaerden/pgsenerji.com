@@ -2,3 +2,14 @@ h1 {
   text-align: center;
   margin-top: 2em;
 }
+.horizontal-scroll {
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  img {
+    display: inline-block;
+    height: 100%;
+    margin: 0 1em;
+  }
+}

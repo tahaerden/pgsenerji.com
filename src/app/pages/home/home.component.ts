@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
@@ -11,6 +11,7 @@ import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
 export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
+  @ViewChild('horizontalScroll') horizontalScroll!: ElementRef;
   slides: Slide[] = [
     {
       headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
@@ -49,4 +50,41 @@ export class HomeComponent {
       src: 'assets/img/about-us/team.jpeg'
     }
   ];
+  references = [
+    'ankara-buyuksehir-belediyesi.jpeg',
+    'asfat.jpeg',
+    'aydin-buyuksehir-belediyesi.jpeg',
+    'cankaya-belediyesi.jpeg',
+    'gebze-belediyesi.jpeg',
+    'icisleri-bakanligi.jpeg',
+    'kastamonu-universitesi.jpeg',
+    'malatya-valiligi.jpeg',
+    'msb.jpeg',
+    'saglik-bakanligi.jpeg',
+    'tobb.jpeg',
+    'toki.jpeg',
+    'abc-schools.jpeg',
+    'havelsan.jpeg',
+    'jandarma.jpeg',
+    'tkk.jpeg'
+  ];
+
+  ngOnInit() {
+    this.startHorizontalScroll();
+  }
+  startHorizontalScroll() {
+    const scroll = setInterval(() => {
+      let newScrollLeft = this.horizontalScroll.nativeElement.scrollLeft;
+      let width = this.horizontalScroll.nativeElement.clientWidth;
+      let scrollWidth = this.horizontalScroll.nativeElement.scrollWidth;
+      this.horizontalScroll.nativeElement.scrollLeft += 5;
+      if (scrollWidth - (newScrollLeft + width) == 0) {
+        clearInterval(scroll);
+        this.horizontalScroll.nativeElement.scrollLeft = 0;
+        setTimeout(() => {
+          this.startHorizontalScroll();
+        }, 1000);
+      }
+    }, 50);
+  }
 }
