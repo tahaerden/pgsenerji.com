@@ -35,8 +35,8 @@ iframe {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -4em;
   left: 0;
 }
 @media (min-aspect-ratio: 16/9) {
