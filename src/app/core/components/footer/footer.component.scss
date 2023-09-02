@@ -2,6 +2,12 @@
 footer {
   background-color: #373737;
   padding: 2em;
+  .col {
+    text-align: center;
+  }
+  img {
+    max-width: min(400px, 100%);
+  }
   h3 {
     text-align: center;
     color: white;
