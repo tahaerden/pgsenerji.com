@@ -14,18 +14,14 @@ export class HomeComponent {
   slides: Slide[] = [
     {
       headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
-      src: 'https://www.youtube.com/embed/bFDNrQp7vi4?'
-    },
-    {
-      headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
+      src: 'https://www.youtube.com/embed/FG0fTKAqZ5g?si=yyLEM_jsuXDDbj-y&amp;clip=Ugkxu5X8a47Je7Hh30ArMZ7GYEhQr-yua1KO&amp;clipt=EOBdGPCrAQ'
     },
     {
       headline: 'Projeler slogan',
       src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=6jhIRmXTT9N9bTde&amp;clip=UgkxVvV2RMxVcvwYgNql10T7osDr1Drakj45&amp;clipt=EPTkARi58wI'
     },
     {
-      headline: 'Çalışanlar slogan',
+      headline: 'Güven, Yenilik, Profesyonellik',
       src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=W0t08nyzzrF_jJ-v&amp;clip=UgkxaaXVwmRcTxtvuVBWq_gtH3QKX4Ki_-5y&amp;clipt=ELKOARi22wE'
     }
   ];

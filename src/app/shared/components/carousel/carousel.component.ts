@@ -48,6 +48,8 @@ import { SafePipe } from 'src/app/core/pipes/safe.pipe';
 export class CarouselComponent implements OnInit {
   @Input() slides!: Slide[];
   @Input() animationType = AnimationType.Scale;
+  @Input() timer: number = 0;
+  slideInterval: any;
 
   currentSlide = 0;
 
@@ -63,13 +65,22 @@ export class CarouselComponent implements OnInit {
     this.currentSlide = next === this.slides.length ? 0 : next;
   }
 
-  ngOnInit() {
-    this.preloadImages(); // for the demo
-  }
-
-  preloadImages() {
-    for (const slide of this.slides) {
-      new Image().src = slide.src;
+  startInterval() {
+    if (this.timer) {
+      this.slideInterval = setInterval(() => {
+        this.onNextClick();
+      }, this.timer);
     }
   }
+
+  ngOnInit() {
+    // this.preloadImages(); // for the demo
+    this.startInterval();
+  }
+
+  // preloadImages() {
+  //   for (const slide of this.slides) {
+  //     new Image().src = slide.src;
+  //   }
+  // }
 }
