@@ -14,6 +14,7 @@ import {
   jackOut,
   slideUp
 } from '../animations/animations';
+import { SafePipe } from 'src/app/core/pipes/safe.pipe';
 
 @Component({
   selector: 'carousel',
@@ -49,7 +50,7 @@ export class CarouselComponent implements OnInit {
 
   currentSlide = 0;
 
-  constructor() {}
+  constructor(public safe: SafePipe) {}
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
