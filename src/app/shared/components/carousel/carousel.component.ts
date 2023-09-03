@@ -28,8 +28,8 @@ import { SafePipe } from 'src/app/core/pipes/safe.pipe';
       transition('scale => void', [useAnimation(scaleOut, { params: { time: '500ms' } })]),
 
       /* fade */
-      transition('void => fade', [useAnimation(fadeIn, { params: { time: '4000ms' } })]),
-      transition('fade => void', [useAnimation(fadeOut, { params: { time: '4000ms' } })]),
+      transition('void => fade', [useAnimation(fadeIn, { params: { time: '2000ms' } })]),
+      transition('fade => void', [useAnimation(fadeOut, { params: { time: '2000ms' } })]),
 
       /* flip */
       transition('void => flip', [useAnimation(flipIn, { params: { time: '500ms' } })]),

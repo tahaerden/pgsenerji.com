@@ -15,28 +15,16 @@ export class HomeComponent {
   slides: Slide[] = [
     {
       headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
-      src: 'https://www.youtube.com/embed/FG0fTKAqZ5g?si=yyLEM_jsuXDDbj-y&amp;clip=Ugkxu5X8a47Je7Hh30ArMZ7GYEhQr-yua1KO&amp;clipt=EOBdGPCrAQ'
+      src: 'assets/video/pgs.mp4'
     },
     {
       headline: 'Projeler slogan',
-      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=6jhIRmXTT9N9bTde&amp;clip=UgkxVvV2RMxVcvwYgNql10T7osDr1Drakj45&amp;clipt=EPTkARi58wI'
+      src: 'assets/video/project.mp4'
     },
     {
       headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=W0t08nyzzrF_jJ-v&amp;clip=UgkxaaXVwmRcTxtvuVBWq_gtH3QKX4Ki_-5y&amp;clipt=ELKOARi22wE'
+      src: 'assets/video/team.mp4'
     }
-    // {
-    //   headline: 'Güven, Yenilik, Profesyonellik',
-    //   src: 'https://www.youtube.com/embed/bFDNrQp7vi4?autoplay=1&mute=1&loop=1&playlist=bFDNrQp7vi4&controls=0&rel=0&modestbranding=0'
-    // },
-    // {
-    //   headline: 'TODO: Projeler slogan',
-    //   src: 'https://www.youtube.com/clip/UgkxVvV2RMxVcvwYgNql10T7osDr1Drakj45?si=Eq5PFtcDGSETbDYg'
-    // },
-    // {
-    //   headline: 'TODO: Çalışanlar slogan',
-    //   src: 'https://www.youtube.com/clip/UgkxaaXVwmRcTxtvuVBWq_gtH3QKX4Ki_-5y?si=upWGY6OER5NcrPcq'
-    // }
   ];
   projects: Slide[] = [
     {
