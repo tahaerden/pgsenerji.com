@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../core/components/footer/footer.component';
 import { CdkMenuModule } from '@angular/cdk/menu';
 const modules = [CommonModule, TranslateModule.forChild(), CdkMenuModule];
+// const pipes = [];
 
 @NgModule({
   declarations: [BannerComponent, BannerComponent, FooterComponent],

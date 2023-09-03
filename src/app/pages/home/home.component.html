@@ -1,20 +1,20 @@
-<div class="main-slides">
-  <carousel [slides]="slides" [animationType]="animationType"></carousel>
+<div class="full-height-minus-header">
+  <carousel [slides]="slides" [animationType]="animationType" [timer]="10000"></carousel>
 </div>
 <div class="row">
   <div class="col">
-    <h1>Öne Çıkan Projeler</h1>
+    <h1>{{ 'FEATURED_PROJECTS' | translate }}</h1>
   </div>
 </div>
-<div class="featured-projects">
+<div class="full-height">
   <carousel [slides]="projects" [animationType]="animationType"></carousel>
 </div>
 <div class="row">
   <div class="col">
-    <h1>Uzman Kadro</h1>
+    <h1>{{ 'EXPERT_TEAM' | translate }}</h1>
   </div>
 </div>
-<div class="row">
+<div class="row max-w-xl m-auto">
   <div class="col">
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus maxime itaque veritatis?
@@ -23,7 +23,15 @@
     </p>
   </div>
   <div class="col">
-    <img src="assets/img/about-us/team.jpeg" alt="{{ 'TEAM' | translate }}" />
+    <carousel [slides]="team" [animationType]="animationType" [timer]="5000"></carousel>
+  </div>
+</div>
+<div class="row max-w-xl m-auto">
+  <div class="col">
+    <h1>{{ 'REFERENCES' | translate }}</h1>
+    <div #horizontalScroll class="horizontal-scroll">
+      <img *ngFor="let item of references" [src]="'assets/img/references/' + item" [alt]="item" />
+    </div>
   </div>
 </div>
 

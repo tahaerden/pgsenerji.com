@@ -4,6 +4,9 @@ a {
   padding: 0.4em;
   text-decoration: none;
   &:hover {
-    color: $body !important;
+    box-shadow: 0 0 5em rgba($color: #000000, $alpha: 0.1) inset;
+  }
+  &:active {
+    box-shadow: 0 0 5em rgba($color: #000000, $alpha: 0.2) inset;
   }
 }

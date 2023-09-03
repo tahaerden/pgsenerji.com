@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Slide } from './carousel.interface';
 import { trigger, transition, useAnimation } from '@angular/animations';
 
@@ -14,11 +14,13 @@ import {
   jackOut,
   slideUp
 } from '../animations/animations';
+import { SafePipe } from 'src/app/core/pipes/safe.pipe';
 
 @Component({
   selector: 'carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
+  encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('slideAnimation', [
       /* scale */
@@ -26,8 +28,8 @@ import {
       transition('scale => void', [useAnimation(scaleOut, { params: { time: '500ms' } })]),
 
       /* fade */
-      transition('void => fade', [useAnimation(fadeIn, { params: { time: '2500ms' } })]),
-      transition('fade => void', [useAnimation(fadeOut, { params: { time: '1000ms' } })]),
+      transition('void => fade', [useAnimation(fadeIn, { params: { time: '4000ms' } })]),
+      transition('fade => void', [useAnimation(fadeOut, { params: { time: '4000ms' } })]),
 
       /* flip */
       transition('void => flip', [useAnimation(flipIn, { params: { time: '500ms' } })]),
@@ -46,10 +48,12 @@ import {
 export class CarouselComponent implements OnInit {
   @Input() slides!: Slide[];
   @Input() animationType = AnimationType.Scale;
+  @Input() timer: number = 0;
+  slideInterval: any;
 
   currentSlide = 0;
 
-  constructor() {}
+  constructor(public safe: SafePipe) {}
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
@@ -61,13 +65,22 @@ export class CarouselComponent implements OnInit {
     this.currentSlide = next === this.slides.length ? 0 : next;
   }
 
-  ngOnInit() {
-    this.preloadImages(); // for the demo
-  }
-
-  preloadImages() {
-    for (const slide of this.slides) {
-      new Image().src = slide.src;
+  startInterval() {
+    if (this.timer) {
+      this.slideInterval = setInterval(() => {
+        this.onNextClick();
+      }, this.timer);
     }
   }
+
+  ngOnInit() {
+    // this.preloadImages(); // for the demo
+    this.startInterval();
+  }
+
+  // preloadImages() {
+  //   for (const slide of this.slides) {
+  //     new Image().src = slide.src;
+  //   }
+  // }
 }

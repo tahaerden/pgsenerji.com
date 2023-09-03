@@ -11,27 +11,32 @@
       <iframe
         *ngIf="i === currentSlide && slide.src.startsWith('https://www.youtube.com')"
         [src]="
-          slide.src +
-          '?autoplay=1&mute=1&loop=1&playlist=bFDNrQp7vi4&controls=0&rel=0&modestbranding=0 | safe'
+          safe.transform(
+            slide.src +
+              '&autoplay=1&mute=1&loop=0&controls=0&rel=0&modestbranding=0&showinfo=0&autohide=0'
+          )
         "
         title="YouTube video player"
-        class="slide"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
+        [@slideAnimation]="animationType"
       ></iframe>
     </div>
-    <h1 *ngIf="i === currentSlide && slide.headline" class="headline" [@slideAnimation]="'slideUp'">
-      {{ slide.headline }}
-    </h1>
+    <h1
+      *ngIf="i === currentSlide && slide.headline"
+      class="headline"
+      [@slideAnimation]="'slideUp'"
+      [innerHtml]="slide.headline"
+    ></h1>
     <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">{{ slide.subtitle }}</h3>
   </ng-container>
 
   <!-- controls -->
-  <button class="control prev" (click)="onPreviousClick()">
+  <button *ngIf="slides.length > 1" class="control prev" (click)="onPreviousClick()">
     <span class="arrow left"></span>
   </button>
-  <button class="control next" (click)="onNextClick()">
+  <button *ngIf="slides.length > 1" class="control next" (click)="onNextClick()">
     <span class="arrow right"></span>
   </button>
 </div>

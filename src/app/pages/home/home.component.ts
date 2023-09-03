@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
@@ -11,10 +11,19 @@ import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
 export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
+  @ViewChild('horizontalScroll') horizontalScroll!: ElementRef;
   slides: Slide[] = [
     {
-      headline: 'test',
-      src: 'https://www.youtube.com/embed/bFDNrQp7vi4'
+      headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
+      src: 'https://www.youtube.com/embed/FG0fTKAqZ5g?si=yyLEM_jsuXDDbj-y&amp;clip=Ugkxu5X8a47Je7Hh30ArMZ7GYEhQr-yua1KO&amp;clipt=EOBdGPCrAQ'
+    },
+    {
+      headline: 'Projeler slogan',
+      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=6jhIRmXTT9N9bTde&amp;clip=UgkxVvV2RMxVcvwYgNql10T7osDr1Drakj45&amp;clipt=EPTkARi58wI'
+    },
+    {
+      headline: 'Güven, Yenilik, Profesyonellik',
+      src: 'https://www.youtube.com/embed/O9F4rXp1Ogc?si=W0t08nyzzrF_jJ-v&amp;clip=UgkxaaXVwmRcTxtvuVBWq_gtH3QKX4Ki_-5y&amp;clipt=ELKOARi22wE'
     }
     // {
     //   headline: 'Güven, Yenilik, Profesyonellik',
@@ -47,4 +56,51 @@ export class HomeComponent {
       src: 'https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
     }
   ];
+  team: Slide[] = [
+    {
+      subtitle: 'Proje 1 şantiyesinden',
+      src: 'assets/img/about-us/team.jpeg'
+    },
+    {
+      subtitle: 'Proje 2 şantiyesinden',
+      src: 'assets/img/about-us/team.jpeg'
+    }
+  ];
+  references = [
+    'ankara-buyuksehir-belediyesi.jpeg',
+    'asfat.jpeg',
+    'aydin-buyuksehir-belediyesi.jpeg',
+    'cankaya-belediyesi.jpeg',
+    'gebze-belediyesi.jpeg',
+    'icisleri-bakanligi.jpeg',
+    'kastamonu-universitesi.jpeg',
+    'malatya-valiligi.jpeg',
+    'msb.jpeg',
+    'saglik-bakanligi.jpeg',
+    'tobb.jpeg',
+    'toki.jpeg',
+    'abc-schools.jpeg',
+    'havelsan.jpeg',
+    'jandarma.jpeg',
+    'tkk.jpeg'
+  ];
+
+  ngOnInit() {
+    this.startHorizontalScroll();
+  }
+  startHorizontalScroll() {
+    const scroll = setInterval(() => {
+      let newScrollLeft = this.horizontalScroll.nativeElement.scrollLeft;
+      let width = this.horizontalScroll.nativeElement.clientWidth;
+      let scrollWidth = this.horizontalScroll.nativeElement.scrollWidth;
+      this.horizontalScroll.nativeElement.scrollLeft += 5;
+      if (scrollWidth - (newScrollLeft + width) == 0) {
+        clearInterval(scroll);
+        this.horizontalScroll.nativeElement.scrollLeft = 0;
+        setTimeout(() => {
+          this.startHorizontalScroll();
+        }, 1000);
+      }
+    }, 50);
+  }
 }
