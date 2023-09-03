@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AutomationComponent } from './automation.component';
+import { ServiceComponent } from './service.component';
 
-const routes: Routes = [{ path: '', component: AutomationComponent }];
+const routes: Routes = [{ path: '', component: ServiceComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AutomationRoutingModule { }
+export class ServiceRoutingModule { }

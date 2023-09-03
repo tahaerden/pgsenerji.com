@@ -1,10 +1,10 @@
 <app-banner title="SERVICES"></app-banner>
 <div class="row">
-  <div class="col">
+  <div class="col text-center">
     <div class="brand" *ngFor="let item of services">
-      <a routerLink="/services/{{ item.route }}">
+      <a [routerLink]="['/service', item.route]">
         <img [src]="'assets/img/services/' + item.route + '.jpg'" [alt]="item" />
-        <h4>{{ item.translationKey | translate }}</h4>
+        <h4>{{ 'SERVICE_NAMES.' + item.translationKey | translate }}</h4>
       </a>
     </div>
   </div>

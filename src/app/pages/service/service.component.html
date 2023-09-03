@@ -1,0 +1,10 @@
+<app-banner title="{{ 'SERVICE_NAMES.' + translationKey | translate }}"></app-banner>
+<button class="bg-primary" type="button" routerLink="/services">
+  {{ 'BACK_TO_SERVICES' | translate }}
+</button>
+<br /><br />
+<div class="row">
+  <div class="col">
+    <div [innerHTML]="'SERVICE_TEXTS.' + translationKey | translate"></div>
+  </div>
+</div>
