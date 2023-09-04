@@ -15,15 +15,15 @@ export class HomeComponent {
   slides: Slide[] = [
     {
       headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
-      src: 'assets/video/pgs.mp4'
+      src: 'assets/video/pgs.webm'
     },
     {
       headline: 'Projeler slogan',
-      src: 'assets/video/project.mp4'
+      src: 'assets/video/project.webm'
     },
     {
       headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'assets/video/team.mp4'
+      src: 'assets/video/team.webm'
     }
   ];
   projects: Slide[] = [

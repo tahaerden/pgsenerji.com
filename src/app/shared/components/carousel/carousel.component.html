@@ -1,4 +1,3 @@
-<!-- carousel -->
 <div class="carousel">
   <ng-container *ngFor="let slide of slides; let i = index">
     <img
@@ -10,7 +9,7 @@
     <video
       *ngIf="i === currentSlide && slide.src.startsWith('assets/video/')"
       [src]="slide.src"
-      type="video/mp4"
+      type="video/webm"
       playsinline
       autoplay
       loop
@@ -26,7 +25,6 @@
     <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">{{ slide.subtitle }}</h3>
   </ng-container>
 
-  <!-- controls -->
   <button *ngIf="slides.length > 1" class="control prev" (click)="onPreviousClick()">
     <span class="arrow left"></span>
   </button>
