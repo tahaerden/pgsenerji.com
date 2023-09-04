@@ -7,12 +7,13 @@
       [@slideAnimation]="animationType"
     />
     <video
+      #videoRef
       *ngIf="i === currentSlide && slide.src.startsWith('assets/video/')"
       [src]="slide.src"
       type="video/webm"
       playsinline
-      autoplay
       loop
+      autoplay
       muted
       [@slideAnimation]="animationType"
     ></video>

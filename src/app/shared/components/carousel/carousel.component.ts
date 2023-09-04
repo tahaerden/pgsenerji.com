@@ -1,4 +1,12 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  ViewChild,
+  ViewEncapsulation
+} from '@angular/core';
 import { Slide } from './carousel.interface';
 import { trigger, transition, useAnimation } from '@angular/animations';
 
@@ -46,6 +54,7 @@ import { SafePipe } from 'src/app/core/pipes/safe.pipe';
   ]
 })
 export class CarouselComponent implements OnInit {
+  @ViewChild('videoRef', { static: false }) videoRef!: ElementRef;
   @Input() slides!: Slide[];
   @Input() animationType = AnimationType.Scale;
   @Input() timer: number = 0;
@@ -53,16 +62,18 @@ export class CarouselComponent implements OnInit {
 
   currentSlide = 0;
 
-  constructor(public safe: SafePipe) {}
+  constructor(public safe: SafePipe, private changeDetectorRef: ChangeDetectorRef) {}
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
     this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
+    this.startVideo();
   }
 
   onNextClick() {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
+    this.startVideo();
   }
 
   startInterval() {
@@ -83,4 +94,17 @@ export class CarouselComponent implements OnInit {
   //     new Image().src = slide.src;
   //   }
   // }
+
+  ngAfterViewInit(): void {
+    this.startVideo();
+  }
+
+  startVideo() {
+    this.changeDetectorRef.detectChanges();
+    if (this.videoRef) {
+      const media = this.videoRef.nativeElement;
+      media.muted = true;
+      media.play();
+    }
+  }
 }
