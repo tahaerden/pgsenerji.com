@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/co
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
+import { referencesList } from 'src/app/shared/data/references';
 
 @Component({
   selector: 'app-home',
@@ -54,24 +55,7 @@ export class HomeComponent {
       src: 'assets/img/about-us/team.jpeg'
     }
   ];
-  references = [
-    'ankara-buyuksehir-belediyesi.jpeg',
-    'asfat.png',
-    'aydin-buyuksehir-belediyesi.jpeg',
-    'cankaya-belediyesi.jpeg',
-    'gebze-belediyesi.png',
-    'icisleri-bakanligi.jpeg',
-    'kastamonu-universitesi.jpeg',
-    'malatya-valiligi.jpeg',
-    'msb.png',
-    'saglik-bakanligi.png',
-    'tobb.jpeg',
-    'toki.jpeg',
-    'abc-schools.jpeg',
-    'havelsan.jpeg',
-    'jandarma.jpeg',
-    'tkk.jpeg'
-  ];
+  references = referencesList;
 
   ngOnInit() {
     this.startHorizontalScroll();
