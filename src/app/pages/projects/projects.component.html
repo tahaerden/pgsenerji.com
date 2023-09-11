@@ -1,3 +1,11 @@
 <app-banner title="PROJECTS"></app-banner>
-
+<div class="row">
+  <div class="col text-center">
+    <div class="box" *ngFor="let item of projects">
+      <img [src]="'assets/img/projects/' + item.id + '/1.jpg'" [alt]="item" />
+      <h4>{{ item.name }}</h4>
+      <h4>{{ item.employer }}, {{ item.location }}</h4>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
