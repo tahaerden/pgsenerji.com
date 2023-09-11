@@ -45,16 +45,6 @@ export class HomeComponent {
       src: 'https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
     }
   ];
-  team: Slide[] = [
-    {
-      subtitle: 'Proje 1 şantiyesinden',
-      src: 'assets/img/about-us/team.jpeg'
-    },
-    {
-      subtitle: 'Proje 2 şantiyesinden',
-      src: 'assets/img/about-us/team.jpeg'
-    }
-  ];
   references = referencesList;
 
   ngOnInit() {
