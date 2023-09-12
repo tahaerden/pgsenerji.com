@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Dialog } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-projects',
@@ -123,4 +124,5 @@ export class ProjectsComponent {
     },
     { id: 'zafer-koleji', name: 'Zafer Koleji', employer: 'İşveren', location: 'Lokasyon' }
   ];
+  constructor(public dialog: Dialog) {}
 }

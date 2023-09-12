@@ -2,10 +2,19 @@
 <div class="row">
   <div class="col text-center">
     <div class="box" *ngFor="let item of projects">
-      <img [src]="'assets/img/projects/' + item.id + '/1.jpg'" [alt]="item" />
+      <img
+        [src]="'assets/img/projects/' + item.id + '/1.jpg'"
+        [alt]="item"
+        (click)="dialog.open(imageViewer, { data: 'assets/img/projects/' + item.id + '/1.jpg' })"
+      />
       <h4>{{ item.name }}</h4>
       <h4>{{ item.employer }}, {{ item.location }}</h4>
     </div>
   </div>
 </div>
 <app-footer></app-footer>
+
+<ng-template #imageViewer let-data>
+  <button class="bg-primary" (click)="dialog.closeAll()">X</button>
+  <img [src]="data" />
+</ng-template>
