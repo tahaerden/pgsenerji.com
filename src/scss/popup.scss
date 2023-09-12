@@ -1,4 +1,4 @@
-.cdk-overlay-pane {
+.popup {
   width: 95vw;
   height: 95vh;
   overflow: hidden;
@@ -17,7 +17,4 @@
     top: 3em;
     right: 3em;
   }
-}
-.cdk-dialog-container {
-  outline: none;
 }

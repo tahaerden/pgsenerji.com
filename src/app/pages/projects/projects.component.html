@@ -15,6 +15,8 @@
 <app-footer></app-footer>
 
 <ng-template #imageViewer let-data>
-  <button class="bg-primary" (click)="dialog.closeAll()">X</button>
-  <img [src]="data" />
+  <div class="popup">
+    <button class="bg-primary" (click)="dialog.closeAll()">X</button>
+    <img [src]="data" />
+  </div>
 </ng-template>
