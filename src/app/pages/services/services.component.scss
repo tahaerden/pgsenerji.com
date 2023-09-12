@@ -12,12 +12,17 @@
     position: relative;
     display: block;
     height: 100%;
+    padding: 0;
     h4 {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       text-align: center;
+      color: white;
+      background: #00000045;
+      margin: 0;
+      padding: 1em;
     }
   }
   img {
@@ -27,7 +32,7 @@
     height: 100%;
     width: auto;
     &:hover {
-      transform: scale(0.9);
+      transform: scale(1.1);
     }
   }
 }
