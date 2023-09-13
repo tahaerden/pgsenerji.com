@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { animate, group, query, style, transition, trigger } from '@angular/animations';
+import { animate, group, keyframes, query, style, transition, trigger } from '@angular/animations';
 import { ChildrenOutletContexts } from '@angular/router';
 
 @Component({
@@ -92,6 +92,21 @@ import { ChildrenOutletContexts } from '@angular/router';
             { optional: true }
           )
         ])
+      ])
+    ]),
+    trigger('footerAnimation', [
+      transition('* <=> *', [
+        animate(
+          '700ms ease-out',
+          keyframes([
+            style({
+              display: 'none'
+            }),
+            style({
+              display: 'none'
+            })
+          ])
+        )
       ])
     ])
   ]

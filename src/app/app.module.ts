@@ -9,13 +9,14 @@ import { CdkMenuModule } from '@angular/cdk/menu';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/');
 }
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent],
+  declarations: [AppComponent, NavigationComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
