@@ -1,6 +1,6 @@
 <app-banner title="SERVICES"></app-banner>
 <div class="row">
-  <div class="col text-center">
+  <div class="col text-center max-w-xl m-auto">
     <div class="box" *ngFor="let item of services">
       <a [routerLink]="['/service', item.route]">
         <img [src]="'assets/img/services/' + item.route + '.jpg'" [alt]="item" />
