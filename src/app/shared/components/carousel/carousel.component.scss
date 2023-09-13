@@ -14,132 +14,132 @@
   width: 100%;
   overflow: hidden;
   // border-radius: 0.5em;
-}
 
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  // zoom effect on hover
-  transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
-  // border-radius: 0.5em;
-}
-
-// .slide:hover {
-//   transform: scale(1.025);
-// }
-
-iframe {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  // top: -4em;
-  top: -100px;
-  left: 0;
-}
-@media (min-aspect-ratio: 16/9) {
-  .video-container iframe {
-    height: 56.25vw;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-container iframe {
-    width: 177.78vh;
-  }
-}
-
-.headline {
-  position: absolute;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6vw;
-  color: white;
-  text-shadow: black 2px 2px 8px;
-  span {
-    color: $primary;
-  }
-}
-
-.subtitle {
-  position: absolute;
-  margin: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0.5em;
-  background-color: #00000050;
-  color: white;
-}
-
-// =========================
-// Next and Prev buttons
-// =========================
-.control {
-  margin: 0;
-  border: none;
-  background-color: transparent;
-  outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
-  position: absolute;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5em;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  user-select: none;
-  height: 100%;
-  opacity: 80%;
-  // opacity effect on hover
-  transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
-  z-index: 2;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-
-  /* Position the buttons */
-  &.next {
-    right: 0;
-  }
-  &.prev {
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
     left: 0;
   }
-}
 
-/* style the arrows */
-.arrow {
-  display: block;
-  border-left: 0.1em solid white;
-  border-bottom: 0.1em solid white;
-  width: 0.5em;
-  height: 0.5em;
-
-  &.left {
-    transform: rotate(45deg);
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // zoom effect on hover
+    transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+    // border-radius: 0.5em;
   }
-  &.right {
-    transform: rotate(225deg);
+
+  // .slide:hover {
+  //   transform: scale(1.025);
+  // }
+
+  iframe {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    // top: -4em;
+    top: -100px;
+    left: 0;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      height: 56.25vw;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      width: 177.78vh;
+    }
+  }
+
+  .headline {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    color: white;
+    text-shadow: black 2px 2px 8px;
+    span {
+      color: $primary;
+    }
+  }
+
+  .subtitle {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    background-color: #00000050;
+    color: white;
+  }
+
+  // =========================
+  // Next and Prev buttons
+  // =========================
+  .control {
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    user-select: none;
+    height: 100%;
+    opacity: 80%;
+    // opacity effect on hover
+    transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+    z-index: 2;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    /* Position the buttons */
+    &.next {
+      right: 0;
+    }
+    &.prev {
+      left: 0;
+    }
+  }
+
+  /* style the arrows */
+  .arrow {
+    display: block;
+    border-left: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    width: 0.5em;
+    height: 0.5em;
+
+    &.left {
+      transform: rotate(45deg);
+    }
+    &.right {
+      transform: rotate(225deg);
+    }
   }
 }
