@@ -32,6 +32,7 @@
   text-decoration: none;
   list-style: none;
   gap: 1em;
+  align-items: center;
   a,
   button {
     display: block;
@@ -39,5 +40,14 @@
     margin: 0;
     text-decoration: none;
     color: $primary;
+  }
+}
+
+@media (max-width: ($sm - 1)) {
+  .nav {
+    a,
+    button {
+      padding: 0;
+    }
   }
 }

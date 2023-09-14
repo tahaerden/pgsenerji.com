@@ -48,7 +48,9 @@
   </ul>
   <ul class="nav hidden-bigger-lg">
     <li>
-      <button [cdkMenuTriggerFor]="menu1">---</button>
+      <button [cdkMenuTriggerFor]="menu1">
+        <img src="assets/img/icons/menu.png" alt="Menu" />
+      </button>
       <ng-template #menu1>
         <div cdkMenu>
           <button cdkMenuItem [cdkMenuTriggerFor]="institutional">
