@@ -56,6 +56,7 @@ body {
 .p-0 {
   padding: 0;
 }
+// VISIBILITY
 @media (max-width: ($lg - 1)) {
   .hidden-smaller-lg {
     display: none !important;
@@ -66,9 +67,17 @@ body {
     display: none !important;
   }
 }
+// HEIGHT
 .full-height-minus-header {
   height: calc(100vh - 100px);
 }
 .full-height {
   height: 100vh;
+}
+// ALIGNMENT
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

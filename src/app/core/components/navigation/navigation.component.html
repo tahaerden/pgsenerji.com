@@ -34,7 +34,10 @@
       <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>
     </li>
     <li>
-      <button [cdkMenuTriggerFor]="menu">{{ selectedLang | uppercase }}</button>
+      <button [cdkMenuTriggerFor]="menu">
+        {{ selectedLang | uppercase }}
+        <img src="assets/img/language/{{ selectedLang }}.png" alt="{{ selectedLang }}" />
+      </button>
       <ng-template #menu>
         <div cdkMenu>
           <button cdkMenuItem (click)="switchLanguage('en')">English</button>
@@ -74,7 +77,10 @@
       </ng-template>
     </li>
     <li>
-      <button [cdkMenuTriggerFor]="menu2">{{ selectedLang | uppercase }}</button>
+      <button [cdkMenuTriggerFor]="menu2">
+        {{ selectedLang | uppercase }}
+        <img src="assets/img/language/{{ selectedLang }}.png" alt="{{ selectedLang }}" />
+      </button>
       <ng-template #menu2>
         <div cdkMenu>
           <button cdkMenuItem (click)="switchLanguage('en')">English</button>
