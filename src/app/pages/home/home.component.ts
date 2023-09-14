@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
@@ -13,20 +14,7 @@ export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
   @ViewChild('horizontalScroll') horizontalScroll!: ElementRef;
-  slides: Slide[] = [
-    {
-      headline: '<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri',
-      src: 'assets/video/pgs.webm'
-    },
-    {
-      headline: 'Projeler slogan',
-      src: 'assets/video/project.webm'
-    },
-    {
-      headline: 'Güven, Yenilik, Profesyonellik',
-      src: 'assets/video/team.webm'
-    }
-  ];
+  slides: Slide[] = [];
   projects: Slide[] = [
     {
       subtitle: 'Proje 1',
@@ -46,6 +34,23 @@ export class HomeComponent {
     }
   ];
   references = referencesList;
+
+  constructor(translate: TranslateService) {
+    this.slides = [
+      {
+        headline: translate.instant('SLIDES.PGS'),
+        src: 'assets/video/pgs.webm'
+      },
+      {
+        headline: translate.instant('SLIDES.PROJECT'),
+        src: 'assets/video/project.webm'
+      },
+      {
+        headline: translate.instant('SLIDES.TEAM'),
+        src: 'assets/video/team.webm'
+      }
+    ];
+  }
 
   ngOnInit() {
     this.startHorizontalScroll();

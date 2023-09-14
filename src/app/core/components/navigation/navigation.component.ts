@@ -10,10 +10,13 @@ import { filter } from 'rxjs';
 })
 export class NavigationComponent {
   showProfileMenu = false;
-  selectedLang = this.translate.getDefaultLang();
+  selectedLang: string;
   isHomePage = false;
 
   constructor(private translate: TranslateService, private router: Router) {
+    const storedLang = localStorage.getItem('lang');
+    this.selectedLang = storedLang || this.translate.getDefaultLang();
+
     router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
@@ -24,5 +27,6 @@ export class NavigationComponent {
   switchLanguage(selectedLang: string) {
     this.translate.use(selectedLang);
     this.selectedLang = selectedLang;
+    localStorage.setItem('lang', selectedLang);
   }
 }

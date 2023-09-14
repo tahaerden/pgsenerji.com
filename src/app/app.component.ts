@@ -114,8 +114,9 @@ import { ChildrenOutletContexts } from '@angular/router';
 export class AppComponent {
   title = 'PGS Enerji';
   constructor(translate: TranslateService, private contexts: ChildrenOutletContexts) {
-    translate.setDefaultLang('tr');
-    translate.use('tr');
+    const storedLang = localStorage.getItem('lang');
+    translate.setDefaultLang(storedLang || 'tr');
+    translate.use(storedLang || 'tr');
   }
   getRouteAnimationData() {
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
