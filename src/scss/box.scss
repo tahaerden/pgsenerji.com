@@ -1,5 +1,5 @@
 .box {
-  width: 370px;
+  width: 300px;
   // height: 300px;
   display: inline-block;
   border: 1px solid lightgray;
@@ -34,7 +34,7 @@
     margin: auto;
     display: block;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(0.9);
     }
   }
 }
