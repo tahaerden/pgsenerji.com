@@ -12,7 +12,6 @@ export const referencesList = [
   'tobb.jpeg',
   'toki.jpeg',
   'abc-schools.jpeg',
-  'havelsan.jpeg',
   'jandarma.jpeg',
   'tkk.jpeg'
 ];

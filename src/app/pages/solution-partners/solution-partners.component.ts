@@ -15,7 +15,6 @@ export class SolutionPartnersComponent {
     'dlex.png',
     'eae.jpeg',
     'ecf.jpeg',
-    'emp.png',
     'erse.jpeg',
     'gersan.png',
     'hcs.jpeg',
