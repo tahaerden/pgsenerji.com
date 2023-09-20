@@ -1,4 +1,4 @@
-<div [class]="isHomePage ? 'navbar home' : 'navbar'">
+<div class="navbar" [ngClass]="{ home: isHomePage, sticky: isSticky }">
   <a routerLink="/">
     <img src="assets/img/pgs-energy-logo-transparent.png" alt="PGS Enerji Logo" />
   </a>

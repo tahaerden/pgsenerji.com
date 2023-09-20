@@ -12,6 +12,7 @@ export class NavigationComponent {
   showProfileMenu = false;
   selectedLang: string;
   isHomePage = false;
+  isSticky = false;
 
   constructor(private translate: TranslateService, private router: Router) {
     const storedLang = localStorage.getItem('lang');
@@ -29,4 +30,21 @@ export class NavigationComponent {
     this.selectedLang = selectedLang;
     localStorage.setItem('lang', selectedLang);
   }
+
+  ngOnInit() {
+    window.addEventListener('scroll', this.scrollEvent, true);
+  }
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.scrollEvent, true);
+  }
+  scrollEvent = (event: any): void => {
+    try {
+      if (event.target.scrollingElement) {
+        const scrollTopVal = event.target.scrollingElement.scrollTop;
+        this.isSticky = scrollTopVal > 300 ? true : false;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 }
