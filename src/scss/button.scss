@@ -28,7 +28,7 @@ button,
   }
   &[type='submit'] {
     @extend .bg-primary;
-    @extend .rounded;
+    // @extend .rounded;
   }
   &[type='button']:has(+ [type='submit']) {
     @extend .stroked;

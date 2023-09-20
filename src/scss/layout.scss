@@ -34,6 +34,9 @@ body {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 // MARGIN
 .max-w-sm {
   max-width: $sm;
@@ -97,4 +100,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+// BORDER RADIUS
+.b-r-5px {
+  border-radius: 5px;
 }

@@ -13,40 +13,39 @@
     <h3>{{ 'PHONE' | translate }}</h3>
     <p>0312 240 00 22</p>
     <p>0532 230 81 59</p>
-    <p><a class="text-primary p-0" href="mailto:info@pgsenerji.com">info@pgsenerji.com</a></p>
+    <h3>{{ 'SOCIAL_MEDIA' | translate }}</h3>
     <p>
       <a
         target="_blank"
         href="https://www.facebook.com/people/PGS-ENERJ%C4%B0/100037509198771/?mibextid=ZbWKwL"
       >
-        Facebook
+        <img src="assets/img/social/facebook.webp" alt="Facebook" />
       </a>
-    </p>
-    <p>
-      <a target="_blank" href="https://www.instagram.com/pgsenerji/"> Instagram </a>
+      <a target="_blank" href="https://www.instagram.com/pgsenerji/">
+        <img src="assets/img/social/instagram.webp" alt="Instagram" />
+      </a>
     </p>
   </div>
   <div class="col">
+    <h3>İletişim Formu</h3>
     <form method="post" class="bg-white" (submit)="sendEmail($event)">
-      <h1 class="text-primary text-center">Drop me a line</h1>
-      <label>Name</label>
+      <label>{{ 'NAME' | translate }}</label>
       <input [(ngModel)]="form.from_name" type="text" name="from_name" />
-      <label>Email</label>
+      <label>{{ 'EMAIL' | translate }}</label>
       <input [(ngModel)]="form.from_email" type="email" name="from_email" />
-      <label>Subject</label>
+      <label>{{ 'SUBJECT' | translate }}</label>
       <input [(ngModel)]="form.subject" type="text" name="subject" />
-      <label>Message</label>
+      <label>{{ 'MESSAGE' | translate }}</label>
       <textarea [(ngModel)]="form.message" name="message"></textarea>
       <br />
       <br />
-      <re-captcha (resolved)="resolved($event)" [siteKey]="recaptchaSitekey"></re-captcha>
+      <!-- <re-captcha (resolved)="resolved($event)" [siteKey]="recaptchaSitekey"></re-captcha> -->
       <br />
       <button
         type="submit"
-        class="btn btn-primary w-100"
         [disabled]="!form.from_name || !form.from_email || !form.subject || !form.message"
       >
-        Send
+        {{ 'SEND' | translate }}
       </button>
     </form>
   </div>

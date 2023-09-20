@@ -53,5 +53,12 @@
     "PGS": "<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri",
     "PROJECT": "<a href=\"/projects\" class=\"text-white\">Featured Projects</a>",
     "TEAM": "Trust, Innovation, Professionalism"
-  }
+  },
+  "SOCIAL_MEDIA": "Social Media",
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "SUBJECT": "Subject",
+  "MESSAGE": "Message",
+  "SEND": "Send",
+  "YOUR_MESSAGE_IS_SENT": "Your message is sent. Thank you."
 }
