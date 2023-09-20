@@ -1,13 +1,16 @@
 @import '/src/scss/variables.scss';
 footer {
   background-color: #373737;
-  padding: 2em;
+  // padding: 2em;
   margin-top: 4em;
   .col {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   img {
-    max-width: min(400px, 100%);
+    max-width: min(300px, 100%);
   }
   h3 {
     text-align: center;
