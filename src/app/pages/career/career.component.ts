@@ -10,7 +10,7 @@ import { cities } from 'src/app/shared/data/cities';
 })
 export class CareerComponent {
   cities = cities;
-  education = ['Lise', 'Lisans', 'Yüksek Lisans', 'Doktora'];
+  education = ['HIGH_SCHOOL', 'DEGREE', 'MASTERS_DEGREE', 'PhD'];
   form = {
     name: '',
     phone: '',

@@ -66,5 +66,9 @@
   "CAREER_FORM": "Career Form",
   "EDUCATION": "Education",
   "CITY": "City",
-  "POSITION": "Position"
+  "POSITION": "Position",
+  "HIGH_SCHOOL": "High School",
+  "DEGREE": "Degree",
+  "MASTERS_DEGREE": "Master's Degree",
+  "PhD": "PhD"
 }

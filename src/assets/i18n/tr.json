@@ -66,5 +66,9 @@
   "CAREER_FORM": "Kariyer Formu",
   "EDUCATION": "Eğitim Seviyesi",
   "CITY": "Şehir",
-  "POSITION": "Pozisyon"
+  "POSITION": "Pozisyon",
+  "HIGH_SCHOOL": "Lise",
+  "DEGREE": "Lisans",
+  "MASTERS_DEGREE": "Yüksek Lisans",
+  "PhD": "Doktora"
 }

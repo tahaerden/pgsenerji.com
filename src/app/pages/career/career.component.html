@@ -14,7 +14,9 @@
       <input [(ngModel)]="form.email" type="text" name="email" />
       <label>{{ 'EDUCATION' | translate }}</label>
       <select [(ngModel)]="form.education" name="education">
-        <option *ngFor="let item of education" [value]="item">{{ item }}</option>
+        <option *ngFor="let item of education" [value]="item | translate">
+          {{ item | translate }}
+        </option>
       </select>
       <label>{{ 'CITY' | translate }}</label>
       <select [(ngModel)]="form.city" name="city">
