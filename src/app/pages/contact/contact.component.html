@@ -27,7 +27,7 @@
     </p>
   </div>
   <div class="col">
-    <h3>İletişim Formu</h3>
+    <h3>{{ 'CONTACT_FORM' | translate }}</h3>
     <form method="post" class="bg-white" (submit)="sendEmail($event)">
       <label>{{ 'NAME' | translate }}</label>
       <input [(ngModel)]="form.from_name" type="text" name="from_name" />
@@ -39,7 +39,6 @@
       <textarea [(ngModel)]="form.message" name="message"></textarea>
       <br />
       <br />
-      <!-- <re-captcha (resolved)="resolved($event)" [siteKey]="recaptchaSitekey"></re-captcha> -->
       <br />
       <button
         type="submit"

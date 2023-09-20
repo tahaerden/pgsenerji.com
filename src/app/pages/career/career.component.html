@@ -1,0 +1,44 @@
+<app-banner title="CAREER"></app-banner>
+<div class="row max-w-xl m-auto">
+  <div class="col">
+    <img src="assets/img/career/career-form.png" alt="Career" />
+  </div>
+  <div class="col">
+    <h2>{{ 'CAREER_FORM' | translate }}</h2>
+    <form method="post" class="bg-white" (submit)="sendEmail($event)">
+      <label>{{ 'NAME' | translate }}</label>
+      <input [(ngModel)]="form.name" type="text" name="name" />
+      <label>{{ 'PHONE' | translate }}</label>
+      <input [(ngModel)]="form.phone" type="text" name="phone" />
+      <label>{{ 'EMAIL' | translate }}</label>
+      <input [(ngModel)]="form.email" type="text" name="email" />
+      <label>{{ 'EDUCATION' | translate }}</label>
+      <select [(ngModel)]="form.education" name="education">
+        <option *ngFor="let item of education" [value]="item">{{ item }}</option>
+      </select>
+      <label>{{ 'CITY' | translate }}</label>
+      <select [(ngModel)]="form.city" name="city">
+        <option *ngFor="let item of cities" [value]="item">{{ item }}</option>
+      </select>
+      <label>{{ 'POSITION' | translate }}</label>
+      <input [(ngModel)]="form.position" type="text" name="position" />
+      <br />
+      <br />
+      <!-- <re-captcha (resolved)="resolved($event)" [siteKey]="recaptchaSitekey"></re-captcha> -->
+      <br />
+      <button
+        type="submit"
+        [disabled]="
+          !form.name ||
+          !form.phone ||
+          !form.email ||
+          !form.education ||
+          !form.city ||
+          !form.position
+        "
+      >
+        {{ 'SEND' | translate }}
+      </button>
+    </form>
+  </div>
+</div>

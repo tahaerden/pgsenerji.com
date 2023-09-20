@@ -65,6 +65,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/service/service.module').then((m) => m.ServiceModule)
   },
   {
+    path: 'career',
+    data: { animation: 'career' },
+    loadChildren: () => import('./pages/career/career.module').then((m) => m.CareerModule)
+  },
+  {
     path: '404',
     loadChildren: () =>
       import('./pages/page-not-found/page-not-found.module').then((m) => m.PageNotFoundModule)

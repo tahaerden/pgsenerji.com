@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { cities } from 'src/app/shared/data/cities';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-career',
+  templateUrl: './career.component.html',
+  styleUrls: ['./career.component.scss']
 })
-export class ContactComponent {
+export class CareerComponent {
+  cities = cities;
+  education = ['Lise', 'Lisans', 'Yüksek Lisans', 'Doktora'];
   form = {
-    from_name: '',
-    from_email: '',
-    subject: '',
-    message: ''
+    name: '',
+    phone: '',
+    email: '',
+    education: '',
+    city: '',
+    position: ''
   };
 
   constructor(private translate: TranslateService) {}
@@ -20,15 +25,17 @@ export class ContactComponent {
   sendEmail(e: Event) {
     e.preventDefault();
     this.form = {
-      from_name: '',
-      from_email: '',
-      subject: '',
-      message: ''
+      name: '',
+      phone: '',
+      email: '',
+      education: '',
+      city: '',
+      position: ''
     };
     emailjs
       .sendForm(
         'service_x614xyl',
-        'template_01dl5tf',
+        'template_v92hsq7',
         e.target as HTMLFormElement,
         'wtF-1YDLULqPRJXpF'
       )

@@ -34,7 +34,15 @@
       <a routerLink="/projects">{{ 'PROJECTS' | translate }}</a>
     </li>
     <li>
-      <a routerLink="/contact">{{ 'CONTACT' | translate }}</a>
+      <button [cdkMenuTriggerFor]="contact">{{ 'CONTACT' | translate }}</button>
+      <ng-template #contact>
+        <div cdkMenu>
+          <button cdkMenuItem routerLink="/contact">{{ 'CONTACT' | translate }}</button>
+          <button cdkMenuItem routerLink="/career">
+            {{ 'CAREER' | translate }}
+          </button>
+        </div>
+      </ng-template>
     </li>
     <li>
       <button [cdkMenuTriggerFor]="menu">
@@ -78,7 +86,15 @@
           <button cdkMenuItem routerLink="/references">{{ 'REFERENCES' | translate }}</button>
           <button cdkMenuItem routerLink="/services">{{ 'SERVICES' | translate }}</button>
           <button cdkMenuItem routerLink="/projects">{{ 'PROJECTS' | translate }}</button>
-          <button cdkMenuItem routerLink="/contact">{{ 'CONTACT' | translate }}</button>
+          <button [cdkMenuTriggerFor]="contact">{{ 'CONTACT' | translate }}</button>
+          <ng-template #contact>
+            <div cdkMenu>
+              <button cdkMenuItem routerLink="/contact">{{ 'CONTACT' | translate }}</button>
+              <button cdkMenuItem routerLink="/career">
+                {{ 'CAREER' | translate }}
+              </button>
+            </div>
+          </ng-template>
         </div>
       </ng-template>
     </li>

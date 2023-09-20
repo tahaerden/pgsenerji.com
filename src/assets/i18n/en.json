@@ -7,6 +7,7 @@
   "EXPERT_TEAM": "Expert Team",
   "FEATURED_PROJECTS": "Featured Projects",
   "HOME": "Home",
+  "CAREER": "Career",
   "INSTITUTIONAL": "Institutional",
   "MISSION_TEXT": "<p>We aim to enhance the lives of individuals and businesses by providing superior-quality electrical and electronic solutions tailored to the needs of our business partners. Leveraging our technological expertise, we efficiently manage energy, offering sustainable and reliable energy solutions. Through optimization of our customers' processes, we enhance efficiency, ensuring uninterrupted energy flow to keep their operations secure. Our goal is to earn our customers' trust and contribute to their success.</p>",
   "VISION_TEXT": "<p>As a company equipped with innovative technologies that shape the future, we aspire to be a leading force in the electrical and electronic sector. Our goal is to establish ourselves as a recognized and trusted business partner on the global stage. By consistently investing in research and development, we aim to set and influence industry standards as a guiding leader. Through our innovative approaches and creative solutions, we strive to maintain our industry leadership by delivering the value our customers anticipate.</p>",
@@ -55,10 +56,15 @@
     "TEAM": "Trust, Innovation, Professionalism"
   },
   "SOCIAL_MEDIA": "Social Media",
+  "CONTACT_FORM": "Contact Form",
   "NAME": "Name",
   "EMAIL": "Email",
   "SUBJECT": "Subject",
   "MESSAGE": "Message",
   "SEND": "Send",
-  "YOUR_MESSAGE_IS_SENT": "Your message is sent. Thank you."
+  "YOUR_MESSAGE_IS_SENT": "Your message is sent. Thank you.",
+  "CAREER_FORM": "Career Form",
+  "EDUCATION": "Education",
+  "CITY": "City",
+  "POSITION": "Position"
 }

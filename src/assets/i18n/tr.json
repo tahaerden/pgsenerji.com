@@ -7,6 +7,7 @@
   "EXPERT_TEAM": "Uzman Kadro",
   "FEATURED_PROJECTS": "Öne Çıkan Projeler",
   "HOME": "Anasayfa",
+  "CAREER": "Kariyer",
   "INSTITUTIONAL": "Kurumsal",
   "MISSION_TEXT": "<p> Biz, iş ortaklarımızın ihtiyaçlarına yönelik üstün kaliteli elektrik ve elektronik çözümleri sunarak, hem bireylerin hem de işletmelerin yaşamlarını kolaylaştırmayı amaçlıyoruz. Teknolojik uzmanlığımızı kullanarak enerjiyi verimli bir şekilde yönetiyor, sürdürülebilir ve güvenilir enerji çözümleri sunuyoruz. Müşterilerimizin iş süreçlerini optimize ederek verimliliğini artırıyor, kesintisiz enerji akışı sağlayarak işlerini güvende tutuyoruz. Amacımız, müşterilerimizin güvenini kazanarak onların başarısına katkıda bulunmaktır. </p> ",
   "VISION_TEXT": "<p> Geleceği şekillendiren yenilikçi teknolojilerle donanmış bir firma olarak, elektrik ve elektronik sektöründe öncü bir konumda yer almayı hedefliyoruz. Global arenada tanınan ve güven duyulan bir iş ortağı olmak için çalışıyoruz. Sürekli olarak araştırma ve geliştirmeye yatırım yaparak endüstri standartlarını belirleyen ve yönlendiren bir lider olmayı amaçlıyoruz. Yenilikçi yaklaşımlarımız ve yaratıcı çözümlerimizle müşterilerimizin beklediği değeri sunarak sektördeki öncülüğümüzü sürdürmek istiyoruz. </p>",
@@ -55,10 +56,15 @@
     "TEAM": "Güven, Yenilik, Profesyonellik"
   },
   "SOCIAL_MEDIA": "Sosyal Medya",
+  "CONTACT_FORM": "İletişim Formu",
   "NAME": "İsim",
   "EMAIL": "E-posta",
   "SUBJECT": "Konu",
   "MESSAGE": "Mesajınız",
   "SEND": "Gönder",
-  "YOUR_MESSAGE_IS_SENT": "Mesajınız gönderildi. Teşekkürler."
+  "YOUR_MESSAGE_IS_SENT": "Mesajınız gönderildi. Teşekkürler.",
+  "CAREER_FORM": "Kariyer Formu",
+  "EDUCATION": "Eğitim Seviyesi",
+  "CITY": "Şehir",
+  "POSITION": "Pozisyon"
 }
