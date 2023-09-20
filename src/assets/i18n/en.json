@@ -51,7 +51,7 @@
   },
   "SLIDES": {
     "PGS": "<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri",
-    "PROJECT": "<a href=\"/projects\" class=\"bg-primary\">Featured Projects</a>",
+    "PROJECT": "<a href=\"/projects\" class=\"text-white\">Featured Projects</a>",
     "TEAM": "Trust, Innovation, Professionalism"
   }
 }

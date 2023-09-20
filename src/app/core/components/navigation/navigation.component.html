@@ -2,7 +2,10 @@
   <a routerLink="/">
     <img src="assets/img/pgs-energy-logo-transparent.png" alt="PGS Enerji Logo" />
   </a>
-  <ul class="nav hidden-smaller-lg">
+  <ul class="nav hidden-smaller-xl">
+    <li>
+      <a routerLink="/">{{ 'HOME' | translate }}</a>
+    </li>
     <li>
       <button [cdkMenuTriggerFor]="institutional">{{ 'INSTITUTIONAL' | translate }}</button>
       <ng-template #institutional>
@@ -46,13 +49,14 @@
       </ng-template>
     </li>
   </ul>
-  <ul class="nav hidden-bigger-lg">
+  <ul class="nav hidden-bigger-xl">
     <li>
       <button [cdkMenuTriggerFor]="menu1">
         <img src="assets/img/icons/menu.png" alt="Menu" />
       </button>
       <ng-template #menu1>
         <div cdkMenu>
+          <button cdkMenuItem routerLink="/">{{ 'HOME' | translate }}</button>
           <button cdkMenuItem [cdkMenuTriggerFor]="institutional">
             {{ 'INSTITUTIONAL' | translate }}
           </button>

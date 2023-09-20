@@ -74,6 +74,16 @@ body {
     display: none !important;
   }
 }
+@media (max-width: ($xl - 1)) {
+  .hidden-smaller-xl {
+    display: none !important;
+  }
+}
+@media (min-width: $xl) {
+  .hidden-bigger-xl {
+    display: none !important;
+  }
+}
 // HEIGHT
 .full-height-minus-header {
   height: calc(100vh - 100px);
