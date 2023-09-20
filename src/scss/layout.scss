@@ -30,6 +30,10 @@ body {
 //   background: green;
 //   grid-column: auto / span 1;
 // }
+// DISPLAY
+.block {
+  display: block;
+}
 // MARGIN
 .max-w-sm {
   max-width: $sm;
@@ -51,6 +55,9 @@ body {
 }
 .m-t-1em {
   margin-top: 1em;
+}
+.m-t-2em {
+  margin-top: 2em;
 }
 // PADDING
 .p-0 {

@@ -8,8 +8,11 @@
   "FEATURED_PROJECTS": "Öne Çıkan Projeler",
   "HOME": "Anasayfa",
   "INSTITUTIONAL": "Kurumsal",
-  "MISSION_AND_VISION_TEXT": "<p> Biz, iş ortaklarımızın ihtiyaçlarına yönelik üstün kaliteli elektrik ve elektronik çözümleri sunarak, hem bireylerin hem de işletmelerin yaşamlarını kolaylaştırmayı amaçlıyoruz. Teknolojik uzmanlığımızı kullanarak enerjiyi verimli bir şekilde yönetiyor, sürdürülebilir ve güvenilir enerji çözümleri sunuyoruz. Müşterilerimizin iş süreçlerini optimize ederek verimliliğini artırıyor, kesintisiz enerji akışı sağlayarak işlerini güvende tutuyoruz. Amacımız, müşterilerimizin güvenini kazanarak onların başarısına katkıda bulunmaktır. </p> <p> Geleceği şekillendiren yenilikçi teknolojilerle donanmış bir firma olarak, elektrik ve elektronik sektöründe öncü bir konumda yer almayı hedefliyoruz. Global arenada tanınan ve güven duyulan bir iş ortağı olmak için çalışıyoruz. Sürekli olarak araştırma ve geliştirmeye yatırım yaparak endüstri standartlarını belirleyen ve yönlendiren bir lider olmayı amaçlıyoruz. Yenilikçi yaklaşımlarımız ve yaratıcı çözümlerimizle müşterilerimizin beklediği değeri sunarak sektördeki öncülüğümüzü sürdürmek istiyoruz. </p>",
+  "MISSION_TEXT": "<p> Biz, iş ortaklarımızın ihtiyaçlarına yönelik üstün kaliteli elektrik ve elektronik çözümleri sunarak, hem bireylerin hem de işletmelerin yaşamlarını kolaylaştırmayı amaçlıyoruz. Teknolojik uzmanlığımızı kullanarak enerjiyi verimli bir şekilde yönetiyor, sürdürülebilir ve güvenilir enerji çözümleri sunuyoruz. Müşterilerimizin iş süreçlerini optimize ederek verimliliğini artırıyor, kesintisiz enerji akışı sağlayarak işlerini güvende tutuyoruz. Amacımız, müşterilerimizin güvenini kazanarak onların başarısına katkıda bulunmaktır. </p> ",
+  "VISION_TEXT": "<p> Geleceği şekillendiren yenilikçi teknolojilerle donanmış bir firma olarak, elektrik ve elektronik sektöründe öncü bir konumda yer almayı hedefliyoruz. Global arenada tanınan ve güven duyulan bir iş ortağı olmak için çalışıyoruz. Sürekli olarak araştırma ve geliştirmeye yatırım yaparak endüstri standartlarını belirleyen ve yönlendiren bir lider olmayı amaçlıyoruz. Yenilikçi yaklaşımlarımız ve yaratıcı çözümlerimizle müşterilerimizin beklediği değeri sunarak sektördeki öncülüğümüzü sürdürmek istiyoruz. </p>",
   "MISSION_AND_VISION": "Misyon ve Vizyon",
+  "MISSION": "Misyon",
+  "VISION": "Vizyon",
   "PAGE_NOT_FOUND": "Aradığınız sayfa bulunamadı.",
   "PROJECTS": "Projeler",
   "REFERENCES": "Referanslar",
@@ -48,7 +51,7 @@
   },
   "SLIDES": {
     "PGS": "<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri",
-    "PROJECT": "Projeler slogan",
+    "PROJECT": "<a href=\"/projects\" class=\"bg-primary\">Öne Çıkan Projeler</a>",
     "TEAM": "Güven, Yenilik, Profesyonellik"
   }
 }

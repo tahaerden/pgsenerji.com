@@ -1,7 +1,12 @@
 <app-banner title="MISSION_AND_VISION"></app-banner>
 <div class="row">
   <div class="col max-w-xl m-auto">
-    <h2>{{ 'MISSION_AND_VISION' | translate }}</h2>
-    <article [innerHtml]="'MISSION_AND_VISION_TEXT' | translate"></article>
+    <h2>{{ 'MISSION' | translate }}</h2>
+    <article [innerHtml]="'MISSION_TEXT' | translate"></article>
+    <h2>{{ 'VISION' | translate }}</h2>
+    <article [innerHtml]="'VISION_TEXT' | translate"></article>
+    <button class="bg-primary m-auto block m-t-2em" routerLink="/about-us">
+      {{ 'ABOUT_US' | translate }}
+    </button>
   </div>
 </div>

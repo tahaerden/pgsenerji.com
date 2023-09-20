@@ -8,8 +8,11 @@
   "FEATURED_PROJECTS": "Featured Projects",
   "HOME": "Home",
   "INSTITUTIONAL": "Institutional",
-  "MISSION_AND_VISION_TEXT": "<p> We provide superior quality electrical and electronic solutions for the needs of our business partners. We aim to make the lives of both individuals and businesses easier. Technological Using our expertise, we manage energy efficiently, sustainably and safely We offer energy solutions. Increasing the efficiency of our customers by optimizing their business processes We keep their businesses safe by providing uninterrupted energy flow. Our aim is To contribute to the success of our customers by gaining their trust. </p> <p> As a company equipped with innovative technologies that shape the future, we provide electrical and electronic We aim to be in a leading position in the industry. A globally recognized and trusted company We are working to become business partners. By constantly investing in research and development We aim to be a leader that sets and guides industry standards. Innovator in the industry by providing the value our customers expect with our approaches and creative solutions. We want to continue our leadership. </p>",
+  "MISSION_TEXT": "<p> We provide superior quality electrical and electronic solutions for the needs of our business partners. We aim to make the lives of both individuals and businesses easier. Technological Using our expertise, we manage energy efficiently, sustainably and safely We offer energy solutions. Increasing the efficiency of our customers by optimizing their business processes We keep their businesses safe by providing uninterrupted energy flow. Our aim is To contribute to the success of our customers by gaining their trust. </p>",
+  "VISION_TEXT": "<p> As a company equipped with innovative technologies that shape the future, we provide electrical and electronic We aim to be in a leading position in the industry. A globally recognized and trusted company We are working to become business partners. By constantly investing in research and development We aim to be a leader that sets and guides industry standards. Innovator in the industry by providing the value our customers expect with our approaches and creative solutions. We want to continue our leadership. </p>",
   "MISSION_AND_VISION": "Mission and Vision",
+  "MISSION": "Mission",
+  "VISION": "Vision",
   "PAGE_NOT_FOUND": "The page you are looking for was not found.",
   "PROJECTS": "Projects",
   "REFERENCES": "References",
@@ -48,7 +51,7 @@
   },
   "SLIDES": {
     "PGS": "<span>P</span>roje&nbsp;ve&nbsp;<span>G</span>üç&nbsp;<span>S</span>istemleri",
-    "PROJECT": "Projects slogan",
+    "PROJECT": "<a href=\"/projects\" class=\"bg-primary\">Featured Projects</a>",
     "TEAM": "Trust, Innovation, Professionalism"
   }
 }
