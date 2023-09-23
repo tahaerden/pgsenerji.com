@@ -108,7 +108,8 @@ export class ProjectsComponent {
       id: 'van-sanliurfa-ve-gaziantep-i̇ha-ve-siha-hangarları',
       name: 'Van Şanlıurfa ve Gaziantep İha ve Siha Hangarları',
       employer: 'İşveren',
-      location: 'Van, Şanlıurfa, Gaziantep'
+      location: 'Van, Şanlıurfa, Gaziantep',
+      representativePhoto: true
     },
     {
       id: 'vedat-dalokay-nikah-ve-kongre-merkezi',

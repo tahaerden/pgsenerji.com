@@ -19,6 +19,9 @@
       />
       <h4>{{ item.name }}</h4>
       <h4>{{ item.employer }}, {{ item.location }}</h4>
+      <h4 *ngIf="item.representativePhoto">
+        {{ 'THIS_PHOTO_IS_REPRESENTATIVE' | translate }}
+      </h4>
     </div>
   </div>
 </div>
