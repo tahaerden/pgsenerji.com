@@ -15,23 +15,20 @@ export class HomeComponent {
   animationType = AnimationType.Fade;
   @ViewChild('horizontalScroll') horizontalScroll!: ElementRef;
   slides: Slide[] = [];
-  projects: Slide[] = [
+  services = [
+    { route: 'lighting-services', translationKey: 'LIGHTING_SERVICES' },
+    { route: 'cctv', translationKey: 'CCTV' },
+    { route: 'compensation-systems', translationKey: 'COMPENSATION_SYSTEMS' },
     {
-      subtitle: 'Proje 1',
-      src: 'https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'
+      route: 'engineering-services-and-projects',
+      translationKey: 'ENGINEERING_SERVICES_AND_PROJECTS'
     },
-    {
-      subtitle: 'Proje 2',
-      src: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
-    },
-    {
-      subtitle: 'Proje 3',
-      src: 'https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80'
-    },
-    {
-      subtitle: 'Proje 4',
-      src: 'https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
-    }
+    { route: 'og-facilities', translationKey: 'OG_FACILITIES' },
+    { route: 'automation', translationKey: 'AUTOMATION' }
+    // { route: 'lightning-rod-and-grounding', translationKey: 'LIGHTNING_ROD_AND_GROUNDING' },
+    // { route: 'landscape-lighting', translationKey: 'LANDSCAPE_LIGHTING' },
+    // { route: 'plc-systems', translationKey: 'PLC_SYSTEMS' },
+    // { route: 'transformers', translationKey: 'TRANSFORMERS' }
   ];
   references = referencesList;
 
