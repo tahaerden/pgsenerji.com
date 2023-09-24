@@ -75,22 +75,10 @@ export class ProjectsComponent {
       location: 'Kütahya'
     },
     {
-      id: 'malatya-turgut-özal-botanik-parkı',
-      name: 'Malatya Turgut Özal Botanik Parkı',
-      employer: 'İşveren',
-      location: 'Malatya'
-    },
-    {
       id: 'malatya-turgut-özal-parkı',
       name: 'Malatya Turgut Özal Parkı',
       employer: 'İşveren',
       location: 'Malatya'
-    },
-    {
-      id: 'nevzat-bicer-parkı-aydın',
-      name: 'Nevzat Biçer Parkı Aydın',
-      employer: 'İşveren',
-      location: 'Aydın'
     },
     {
       id: 'polatlı-sakarya-şehitliği',
