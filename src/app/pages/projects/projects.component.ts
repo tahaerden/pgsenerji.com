@@ -60,7 +60,7 @@ export class ProjectsComponent {
       id: 'i̇cişleri-bakanlık-konutu',
       name: 'İçişleri Bakanlık Konutu',
       employer: 'İçişleri Bakanlığı',
-      location: 'Çankara'
+      location: 'Çankaya'
     },
     {
       id: 'i̇zmir-nevvar-salih-i̇şgören-camii',
