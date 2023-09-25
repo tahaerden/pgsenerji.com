@@ -9,7 +9,7 @@
     <h1>{{ 'FEATURED_SERVICES' | translate }}</h1>
   </div>
 </div>
-<div class="row wow slideInDown">
+<div class="row wow slideInDown" data-wow-delay="1s">
   <div class="col text-center max-w-xl m-auto">
     <div class="featured-box" *ngFor="let item of services">
       <img [src]="'assets/img/services/' + item.route + '.jpg'" [alt]="item" />
@@ -27,7 +27,7 @@
     <button class="bg-primary" routerLink="/services">{{ 'READ_MORE' | translate }}</button>
   </div>
 </div>
-<div class="row max-w-xl m-auto wow fadeInUp">
+<div class="row max-w-xl m-auto wow slideInLeft" data-wow-delay="1s">
   <div class="col">
     <h1>{{ 'SOLUTION_PARTNERS' | translate }}</h1>
     <div #partnersScroll class="horizontal-scroll">
@@ -44,7 +44,7 @@
     <h1>{{ 'ABOUT_US' | translate }}</h1>
   </div>
 </div>
-<div class="row max-w-xl m-auto wow pulse">
+<div class="row max-w-xl m-auto wow pulse" data-wow-delay="1s">
   <div class="col flex-center">
     <img src="assets/img/about-us/office.jpg" alt="office" />
   </div>
@@ -55,7 +55,7 @@
     </div>
   </div>
 </div>
-<div class="row max-w-xl m-auto wow fadeInUp">
+<div class="row max-w-xl m-auto wow slideInLeft" data-wow-delay="1s">
   <div class="col">
     <h1>{{ 'REFERENCES' | translate }}</h1>
     <div #referenceScroll class="horizontal-scroll">
