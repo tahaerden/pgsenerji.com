@@ -1,7 +1,17 @@
 <footer>
+  {{ selectedLang }}
   <div class="row">
     <div class="col">
-      <img src="assets/img/pgs-energy-logo-transparent.png" alt="" />
+      <img
+        *ngIf="selectedLang === 'en'"
+        src="assets/img/pgs-energy-logo-transparent.png"
+        alt="PGS Enerji Logo"
+      />
+      <img
+        *ngIf="selectedLang === 'tr'"
+        src="assets/img/pgs-enerji-logo-transparent.png"
+        alt="PGS Enerji Logo"
+      />
     </div>
     <div class="col">
       <!-- <h3>{{ 'SITEMAP' | translate }}</h3> -->
