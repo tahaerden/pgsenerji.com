@@ -13,7 +13,8 @@ import { referencesList } from 'src/app/shared/data/references';
 export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
-  @ViewChild('horizontalScroll') horizontalScroll!: ElementRef;
+  @ViewChild('referenceScroll') referenceScroll!: ElementRef;
+  @ViewChild('partnersScroll') partnersScroll!: ElementRef;
   slides: Slide[] = [];
   services = [
     { route: 'lighting-services', translationKey: 'LIGHTING_SERVICES' },
@@ -31,6 +32,27 @@ export class HomeComponent {
     // { route: 'transformers', translationKey: 'TRANSFORMERS' }
   ];
   references = referencesList;
+  partnersImgName = [
+    '2m-kablo.png',
+    'abb.png',
+    'ankalight.jpeg',
+    'astor.jpeg',
+    'atempo.png',
+    'dlex.png',
+    'eae.jpeg',
+    'ecf.jpeg',
+    'erse.jpeg',
+    'gersan.png',
+    'hcs.jpeg',
+    'hik-vision.png',
+    'oznur-kablo.png',
+    'pinarsan.png',
+    'prosis.png',
+    'prosis2.jpeg',
+    'prysmian.png',
+    'sts.jpeg',
+    'vekta.png'
+  ];
 
   constructor(translate: TranslateService) {
     this.slides = [
@@ -53,14 +75,27 @@ export class HomeComponent {
     this.startHorizontalScroll();
   }
   startHorizontalScroll() {
-    const scroll = setInterval(() => {
-      let newScrollLeft = this.horizontalScroll.nativeElement.scrollLeft;
-      let width = this.horizontalScroll.nativeElement.clientWidth;
-      let scrollWidth = this.horizontalScroll.nativeElement.scrollWidth;
-      this.horizontalScroll.nativeElement.scrollLeft += 5;
+    const referenceScroll = setInterval(() => {
+      let newScrollLeft = this.referenceScroll.nativeElement.scrollLeft;
+      let width = this.referenceScroll.nativeElement.clientWidth;
+      let scrollWidth = this.referenceScroll.nativeElement.scrollWidth;
+      this.referenceScroll.nativeElement.scrollLeft += 5;
       if (scrollWidth - (newScrollLeft + width) == 0) {
-        clearInterval(scroll);
-        this.horizontalScroll.nativeElement.scrollLeft = 0;
+        clearInterval(referenceScroll);
+        this.referenceScroll.nativeElement.scrollLeft = 0;
+        setTimeout(() => {
+          this.startHorizontalScroll();
+        }, 1000);
+      }
+    }, 50);
+    const partnersScroll = setInterval(() => {
+      let newScrollLeft = this.partnersScroll.nativeElement.scrollLeft;
+      let width = this.partnersScroll.nativeElement.clientWidth;
+      let scrollWidth = this.partnersScroll.nativeElement.scrollWidth;
+      this.partnersScroll.nativeElement.scrollLeft += 5;
+      if (scrollWidth - (newScrollLeft + width) == 0) {
+        clearInterval(partnersScroll);
+        this.partnersScroll.nativeElement.scrollLeft = 0;
         setTimeout(() => {
           this.startHorizontalScroll();
         }, 1000);

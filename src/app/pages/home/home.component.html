@@ -24,6 +24,18 @@
     <button class="bg-primary" routerLink="/services">{{ 'READ_MORE' | translate }}</button>
   </div>
 </div>
+<div class="row max-w-xl m-auto wow fadeInUp">
+  <div class="col">
+    <h1>{{ 'SOLUTION_PARTNERS' | translate }}</h1>
+    <div #partnersScroll class="horizontal-scroll">
+      <img
+        *ngFor="let item of partnersImgName"
+        [src]="'assets/img/solution-partners/' + item"
+        [alt]="item"
+      />
+    </div>
+  </div>
+</div>
 <div class="row">
   <div class="col">
     <h1>{{ 'ABOUT_US' | translate }}</h1>
@@ -43,7 +55,7 @@
 <div class="row max-w-xl m-auto wow fadeInUp">
   <div class="col">
     <h1>{{ 'REFERENCES' | translate }}</h1>
-    <div #horizontalScroll class="horizontal-scroll">
+    <div #referenceScroll class="horizontal-scroll">
       <img *ngFor="let item of references" [src]="'assets/img/references/' + item" [alt]="item" />
     </div>
   </div>
