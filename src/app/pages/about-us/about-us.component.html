@@ -1,7 +1,23 @@
 <app-banner title="ABOUT_US"></app-banner>
 <div class="row">
-  <div class="col max-w-xl m-auto">
+  <div class="col max-w-xl m-auto" style="flex: 1 1 auto">
     <h2>{{ 'ABOUT_US' | translate }}</h2>
     <article [innerHtml]="'ABOUT_US_TEXT' | translate"></article>
+  </div>
+  <div class="col" style="flex: 0 0 30%">
+    <ul class="sideNav">
+      <li>
+        <a routerLink="/about-us" class="bg-primary">{{ 'ABOUT_US' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/mission-vision">{{ 'MISSION_AND_VISION' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/team">{{ 'TEAM' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/responsibilities">{{ 'RESPONSIBILITIES' | translate }}</a>
+      </li>
+    </ul>
   </div>
 </div>

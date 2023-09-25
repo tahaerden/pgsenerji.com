@@ -38,3 +38,15 @@
     }
   }
 }
+
+.sideNav {
+  list-style-type: none;
+  padding: 0;
+  li {
+    border-bottom: 1px solid lightgray;
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}

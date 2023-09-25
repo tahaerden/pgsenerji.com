@@ -1,10 +1,24 @@
 <app-banner title="TEAM"></app-banner>
-<div class="row max-w-xl m-auto">
+<div class="row max-w-xl m-auto" style="flex: 1 1 auto">
   <div class="col">
     <h2 class="m-t-0">{{ 'TEAM' | translate }}</h2>
+    <img src="assets/img/team/team.jpeg" alt="{{ 'TEAM' | translate }}" />
     <article [innerHtml]="'TEAM_TEXT' | translate"></article>
   </div>
-  <div class="col flex-center">
-    <img src="assets/img/team/team.jpeg" alt="{{ 'TEAM' | translate }}" />
+  <div class="col" style="flex: 0 0 30%">
+    <ul class="sideNav">
+      <li>
+        <a routerLink="/about-us">{{ 'ABOUT_US' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/mission-vision">{{ 'MISSION_AND_VISION' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/team" class="bg-primary">{{ 'TEAM' | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="/responsibilities">{{ 'RESPONSIBILITIES' | translate }}</a>
+      </li>
+    </ul>
   </div>
 </div>
