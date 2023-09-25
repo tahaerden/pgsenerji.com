@@ -1,6 +1,6 @@
 {
   "name": "pgsenerji.com",
-  "version": "2.89.0",
+  "version": "2.90.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,6 +25,7 @@
     "emailjs-com": "^3.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "wowjs": "^1.1.3",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
