@@ -16,6 +16,11 @@ export class HomeComponent {
   @ViewChild('referenceScroll') referenceScroll!: ElementRef;
   @ViewChild('partnersScroll') partnersScroll!: ElementRef;
   slides: Slide[] = [];
+  slides2 = [
+    { src: 'assets/img/home/equality of opportunity.jpg' },
+    { src: 'assets/img/home/internship.jpg' },
+    { src: 'assets/img/home/sustainability.jpg' }
+  ];
   services = [
     { route: 'lighting-services', translationKey: 'LIGHTING_SERVICES' },
     { route: 'cctv', translationKey: 'CCTV' },
