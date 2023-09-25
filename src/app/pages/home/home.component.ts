@@ -36,15 +36,15 @@ export class HomeComponent {
     this.slides = [
       {
         headline: translate.instant('SLIDES.PGS'),
-        src: 'assets/video/pgs.webm'
+        src: 'assets/video/pgs.mp4'
       },
       {
         headline: translate.instant('SLIDES.PROJECT'),
-        src: 'assets/video/project.webm'
+        src: 'assets/video/project.mp4'
       },
       {
         headline: translate.instant('SLIDES.TEAM'),
-        src: 'assets/video/team.webm'
+        src: 'assets/video/team.mp4'
       }
     ];
   }
