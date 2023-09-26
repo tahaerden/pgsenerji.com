@@ -1,6 +1,6 @@
 {
   "name": "pgsenerji.com",
-  "version": "2.111.0",
+  "version": "2.112.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
