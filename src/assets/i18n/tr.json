@@ -59,6 +59,11 @@
     "PROJECT": "<a href=\"/projects\" class=\"text-white\">Öne Çıkan Projeler</a>",
     "TEAM": "Güven, Yenilik, Profesyonellik"
   },
+  "SLIDES2": {
+    "EQUALITY": "PGS Enerji, şirket içinde herkesin eşitliğini koruyarak, tüm çalışanlar için ayrımcılığa karşı duyarlı bir iş ortamı sağlama konusundaki taahhüdünü sürdürmektedir.",
+    "INTERNSHIP": "Trust, Innovation, Professionalism",
+    "SUSTAINABILITY": "PGS Enerji, sürdürülebilirlik amacını benimseyerek, yaşanabilir ve sürdürülebilir bir çevrenin yol gösterici unsuru olarak \"Sürdürülebilirlik\" ilkesini benimsemektedir."
+  },
   "SOCIAL_MEDIA": "Sosyal Medya",
   "CONTACT_FORM": "İletişim Formu",
   "NAME": "İsim",
@@ -74,5 +79,8 @@
   "HIGH_SCHOOL": "Lise",
   "DEGREE": "Lisans",
   "MASTERS_DEGREE": "Yüksek Lisans",
-  "PhD": "Doktora"
+  "PhD": "Doktora",
+  "EQUALITY_OF_OPPORTUNITY": "Fırsat Eşitliği",
+  "INTERNSHIP": "Staj Programı",
+  "SUSTAINABILITY": "Sürdürülebi̇li̇rli̇k"
 }

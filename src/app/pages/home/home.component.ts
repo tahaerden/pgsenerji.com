@@ -19,9 +19,24 @@ export class HomeComponent {
   @ViewChild('partnersScroll') partnersScroll!: ElementRef;
   slides: Slide[] = [];
   slides2 = [
-    { src: 'assets/img/home/equality of opportunity.jpg' },
-    { src: 'assets/img/home/internship.jpg' },
-    { src: 'assets/img/home/sustainability.jpg' }
+    {
+      src: 'assets/img/home/equality of opportunity.jpg',
+      paragraph: 'SLIDES2.EQUALITY',
+      buttonText: 'EQUALITY_OF_OPPORTUNITY',
+      buttonUrl: '/career'
+    },
+    {
+      src: 'assets/img/home/internship.jpg',
+      paragraph: 'SLIDES2.INTERNSHIP',
+      buttonText: 'INTERNSHIP',
+      buttonUrl: '/career'
+    },
+    {
+      src: 'assets/img/home/sustainability.jpg',
+      paragraph: 'SLIDES2.SUSTAINABILITY',
+      buttonText: 'SUSTAINABILITY',
+      buttonUrl: '/responsibilities'
+    }
   ];
   services = [
     { route: 'lighting-services', translationKey: 'LIGHTING_SERVICES' },
