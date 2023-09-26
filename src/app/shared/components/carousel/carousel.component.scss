@@ -52,6 +52,14 @@
     top: -100px;
     left: 0;
   }
+
+  .buttonText {
+    position: absolute;
+    right: -20%;
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+
   @media (min-aspect-ratio: 16/9) {
     .video-container iframe {
       height: 56.25vw;
@@ -60,6 +68,18 @@
   @media (max-aspect-ratio: 16/9) {
     .video-container iframe {
       width: 177.78vh;
+    }
+  }
+
+  @media (max-width: ($lg - 1)) {
+    .buttonText {
+      position: relative;
+      top: 0;
+      right: 0;
+      font-size: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
   }
 

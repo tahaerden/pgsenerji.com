@@ -38,7 +38,7 @@
 <div *ngIf="slides[0].paragraph && slides[0].buttonText" class="carousel" style="overflow: visible">
   <ng-container *ngFor="let slide of slides; let i = index">
     <div *ngIf="i === currentSlide" class="row" [@slideAnimation]="animationType">
-      <div class="col">
+      <div class="col" style="position: relative">
         <img
           *ngIf="i === currentSlide && !slide.src.startsWith('assets/video/')"
           [src]="slide.src"
@@ -53,6 +53,14 @@
           autoplay
           muted
         ></video>
+        <button
+          *ngIf="i === currentSlide && slide.buttonText"
+          type="button"
+          class="bg-primary buttonText"
+          [routerLink]="slide.buttonUrl"
+        >
+          {{ slide.buttonText | translate }}
+        </button>
       </div>
       <div class="col">
         <h1
@@ -67,14 +75,6 @@
         <p *ngIf="i === currentSlide && slide.paragraph" class="paragraph">
           {{ slide.paragraph | translate }}
         </p>
-        <button
-          *ngIf="i === currentSlide && slide.buttonText"
-          type="button"
-          class="bg-primary buttonText flex-center m-auto"
-          [routerLink]="slide.buttonUrl"
-        >
-          {{ slide.buttonText | translate }}
-        </button>
       </div>
     </div>
   </ng-container>
