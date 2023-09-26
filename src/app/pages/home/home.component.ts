@@ -61,18 +61,18 @@ export class HomeComponent {
     'vekta.png'
   ];
 
-  constructor(translate: TranslateService) {
+  constructor() {
     this.slides = [
       {
-        headline: translate.instant('SLIDES.PGS'),
+        headline: 'SLIDES.PGS',
         src: 'assets/video/pgs.mp4'
       },
       {
-        headline: translate.instant('SLIDES.PROJECT'),
+        headline: 'SLIDES.PROJECT',
         src: 'assets/video/project.mp4'
       },
       {
-        headline: translate.instant('SLIDES.TEAM'),
+        headline: 'SLIDES.TEAM',
         src: 'assets/video/team.mp4'
       }
     ];

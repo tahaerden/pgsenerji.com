@@ -21,9 +21,11 @@
       *ngIf="i === currentSlide && slide.headline"
       class="headline"
       [@slideAnimation]="'slideUp'"
-      [innerHtml]="slide.headline"
+      [innerHtml]="slide.headline | translate"
     ></h1>
-    <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">{{ slide.subtitle }}</h3>
+    <h3 *ngIf="i === currentSlide && slide.subtitle" class="subtitle">
+      {{ slide.subtitle | translate }}
+    </h3>
   </ng-container>
 
   <button *ngIf="slides.length > 1" class="control prev" (click)="onPreviousClick()">
