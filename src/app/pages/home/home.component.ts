@@ -13,6 +13,8 @@ import { referencesList } from 'src/app/shared/data/references';
 export class HomeComponent {
   @ViewChild(CarouselComponent, { static: true }) carousel!: CarouselComponent;
   animationType = AnimationType.Fade;
+  referenceScrollInterval: any;
+  partnersScrollInterval: any;
   @ViewChild('referenceScroll') referenceScroll!: ElementRef;
   @ViewChild('partnersScroll') partnersScroll!: ElementRef;
   slides: Slide[] = [];
@@ -77,29 +79,35 @@ export class HomeComponent {
   }
 
   ngOnInit() {
-    this.startHorizontalScroll();
+    setTimeout(() => {
+      this.startHorizontalScroll();
+    }, 200);
+  }
+  ngOnDestroy() {
+    clearInterval(this.referenceScrollInterval);
+    clearInterval(this.partnersScrollInterval);
   }
   startHorizontalScroll() {
-    const referenceScroll = setInterval(() => {
+    this.referenceScrollInterval = setInterval(() => {
       let newScrollLeft = this.referenceScroll.nativeElement.scrollLeft;
       let width = this.referenceScroll.nativeElement.clientWidth;
       let scrollWidth = this.referenceScroll.nativeElement.scrollWidth;
       this.referenceScroll.nativeElement.scrollLeft += 5;
       if (scrollWidth - (newScrollLeft + width) == 0) {
-        clearInterval(referenceScroll);
+        clearInterval(this.referenceScrollInterval);
         this.referenceScroll.nativeElement.scrollLeft = 0;
         setTimeout(() => {
           this.startHorizontalScroll();
         }, 1000);
       }
     }, 50);
-    const partnersScroll = setInterval(() => {
+    this.partnersScrollInterval = setInterval(() => {
       let newScrollLeft = this.partnersScroll.nativeElement.scrollLeft;
       let width = this.partnersScroll.nativeElement.clientWidth;
       let scrollWidth = this.partnersScroll.nativeElement.scrollWidth;
       this.partnersScroll.nativeElement.scrollLeft += 5;
       if (scrollWidth - (newScrollLeft + width) == 0) {
-        clearInterval(partnersScroll);
+        clearInterval(this.partnersScrollInterval);
         this.partnersScroll.nativeElement.scrollLeft = 0;
         setTimeout(() => {
           this.startHorizontalScroll();
