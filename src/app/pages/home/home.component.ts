@@ -1,5 +1,4 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AnimationType } from 'src/app/shared/components/animations/animations';
 import { CarouselComponent } from 'src/app/shared/components/carousel/carousel.component';
 import { Slide } from 'src/app/shared/components/carousel/carousel.interface';
@@ -20,19 +19,19 @@ export class HomeComponent {
   slides: Slide[] = [];
   slides2 = [
     {
-      src: 'assets/img/home/equality of opportunity.jpg',
+      src: 'assets/img/home/equality of opportunity1.jpg',
       paragraph: 'SLIDES2.EQUALITY',
       buttonText: 'EQUALITY_OF_OPPORTUNITY',
       buttonUrl: '/career'
     },
     {
-      src: 'assets/img/home/internship.jpg',
+      src: 'assets/img/home/internship1.jpg',
       paragraph: 'SLIDES2.INTERNSHIP',
       buttonText: 'INTERNSHIP',
       buttonUrl: '/career'
     },
     {
-      src: 'assets/img/home/sustainability.jpg',
+      src: 'assets/img/home/sustainability1.jpg',
       paragraph: 'SLIDES2.SUSTAINABILITY',
       buttonText: 'SUSTAINABILITY',
       buttonUrl: '/responsibilities'
