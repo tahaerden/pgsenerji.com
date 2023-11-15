@@ -17,8 +17,8 @@
         [alt]="item"
         (click)="dialog.open(imageViewer, { data: 'assets/img/projects/' + item.id + '/1.jpg' })"
       />
-      <h4>{{ item.name }}</h4>
-      <h4>{{ item.employer }}, {{ item.location }}</h4>
+      <h4>{{ 'PROJECT_NAME.' + item.id | translate }}</h4>
+      <h4>{{ 'PROJECT_EMPLOYER.' + item.id | translate }}, {{ item.location }}</h4>
       <h4 *ngIf="item.representativePhoto">
         {{ 'THIS_PHOTO_IS_REPRESENTATIVE' | translate }}
       </h4>
